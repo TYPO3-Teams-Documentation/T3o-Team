@@ -33,9 +33,8 @@ My Public Info Project
 :Writing here:    My Name (replace by your Name)
 :Rendered:        |today|
 :Buildinfo:       `buildinfo <_buildinfo>`_
-:Others:          `overview <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/>`__
-
-
+:Others:          `folder overview <..>`__
+:Others:          `list of 'heros' <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/>`__
 .. _Martin: martin.bless@mbless.de
 
 
