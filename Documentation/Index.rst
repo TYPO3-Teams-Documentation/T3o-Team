@@ -33,10 +33,11 @@ My Public Info Project
 :Writing here:    My Name (replace by your Name)
 :Rendered:        |today|
 :Buildinfo:       `buildinfo <_buildinfo>`_
-:Others:          `folder overview <..>`__
-:Others:          `list of 'heros' <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/>`__
-.. _Martin: martin.bless@mbless.de
+:Others:          `Who else has a starter project?`__
 
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/
+
+.. _Martin: martin.bless@mbless.de
 
 .. attention::
 
@@ -56,7 +57,7 @@ My Public Info Project
 
 .. _hello:
 
-Hello,
+**Hello,**
 
 Martin_ here.
 
@@ -70,8 +71,10 @@ What's it about?
 
 #. Never before has it been easier to write in this format:
 
-   - Goto `website <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/>`__
-     and from there to YOUR project. Just remember the number.
+   - Goto `the drafts <https://docs.typo3.org/typo3cms/drafts/>`__,
+     from there to `the starter projects <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/>`__
+     and from there to YOUR project. Just remember the number. We also keep a list of `"Who is where?" here
+     <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/Index.html#who-is-where>`__.
      
    - Go to your "Hello world!" page - for example.
    
@@ -99,7 +102,9 @@ What's it about?
      
    - If something isn't working as you expect:
      
-     .. tip:: Watch the log!
+     .. tip:: 
+     
+        **Watch the log!**
      
         Each documentation project that's rendered by the new tool chain
         leaves a `/_buildinfo` folder that you can inspect in the web.
@@ -135,12 +140,20 @@ TYPO3 - Inspire people to share!
 Martin_
 
 
+.. These are anonymous hyperlinks. Each link in the text, which is formed by TWO trailing
+   underscores, will consume the next of the following links.
+
+__ https://docs.typo3.org/typo3cms/RenderTYPO3DocumentationGuide/ProjectsOnGithub/Index.html
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/reStructuredText/Index.html
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/
+
+
 ---------------------------------------------
 
 
 .. _hallo:
 
-Hallo,
+**Hallo,**
 
 Martin_ hier.
 
@@ -156,6 +169,12 @@ Worum geht's?
 
    - Du gehst auf die `Website <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/>`__
      und dort zu DEINEM Projekt. Merk dir halt die Nummer.
+     
+   - Geh zum `Entwurfsbereich  <https://docs.typo3.org/typo3cms/drafts/>`__,
+     von dort zu `den Starterprojecten <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/>`__
+     und von dort zu DEINEM Projekt. Merk dir einfach die Nummer. 
+     Wir führen auch eine Liste `"Wer ist wo?" hier
+     <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/Index.html#who-is-where>`__.
      
    - Geh z. B. auf die "Hello world!" Seite.
    
@@ -180,7 +199,9 @@ Worum geht's?
      
    - Wenn etwas nicht so funktioniert wie erwartet:
      
-     .. tip:: Schau ins Protokoll!
+     .. tip:: 
+     
+        **Schau ins Protokoll!**
 
         Jedes Doku-Projekt, dass mit der neuen TYPO3-Documentation_Toolchain gerendert wird,
         erhält auch einen `/_buildinfo` Ordner, den man hier im Web aufrufen kann. Darin ist
@@ -228,6 +249,7 @@ Martin_
 __ https://docs.typo3.org/typo3cms/RenderTYPO3DocumentationGuide/ProjectsOnGithub/Index.html
 __ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/reStructuredText/Index.html
 __ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/
+
 
 
 .. toctree::
