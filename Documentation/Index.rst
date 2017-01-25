@@ -30,16 +30,17 @@ T3O-Developments
    Think of it as key-value pairs.
 
 
-:Writing here:    T3O team
+:Writing here:    T3O-Team
 :Rendered:        |today|
-:Buildinfo:       `buildinfo <_buildinfo>`_
+:Buildinfo:       Find information about the documentation build process in `buildinfo <_buildinfo>`_
+:Markup:          Have a look at the `warnings.txt <_buildinfo/warnings.txt>`_ to see if there a
+                  warnings about the reStructuredText syntax.
 
 
-
+.. rst-class:: compact
 .. toctree::
-   :hidden:
 
-   HelloWorld/Index
-   Hyperlinks/Index
-   reStructuredText/Index
+   T3oRelaunch2017/Index
+   T3oTerLaunch2017/Index
+   Knowledgebase/Index
 
