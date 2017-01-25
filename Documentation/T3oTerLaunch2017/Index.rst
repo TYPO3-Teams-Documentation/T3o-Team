@@ -8,7 +8,7 @@ Launch 2017 ter.typo3.org
 
 .. contents:: On this page:
    :local:
-   :class: compact
+   :class: compactlist
    :backlinks: top
 
 
