@@ -37,7 +37,9 @@ typo3.org-Team At Work
                   warnings about the reStructuredText syntax.
 
 
-.. rst-class:: compact
+**Contents:**
+
+.. rst-class:: compactlist
 .. toctree::
 
    T3oRelaunch2017/Index
