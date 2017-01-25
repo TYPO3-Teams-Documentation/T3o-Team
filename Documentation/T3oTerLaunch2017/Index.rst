@@ -63,3 +63,10 @@ Solution::
    bash-php# exit
    ➜ make reset
 
+
+Solr
+====
+
+To get the solr connection working, you need to add the "Search - Base Configuration (solr)"
+to the root template, and the "Initialize Solr Connections" in the "cache-menu" top right.
+
