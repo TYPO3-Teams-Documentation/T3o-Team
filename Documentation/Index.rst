@@ -22,7 +22,7 @@
 
 
 ======================
-T3O-Developments
+typo3.org-Team At Work
 ======================
 
 
@@ -30,7 +30,7 @@ T3O-Developments
    Think of it as key-value pairs.
 
 
-:Writing here:    T3O-Team
+:Writing here:    typo3.org-Team
 :Rendered:        |today|
 :Buildinfo:       Find information about the documentation build process in `buildinfo <_buildinfo>`_
 :Markup:          Have a look at the `warnings.txt <_buildinfo/warnings.txt>`_ to see if there a
