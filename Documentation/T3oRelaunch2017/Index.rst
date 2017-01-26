@@ -84,3 +84,9 @@ For your convenience there are the following make jobs::
 
    make composer-install
    make composer-update
+
+
+phpMyAdmin
+==========
+
+Find a howto at :ref:`ter-project-phpMyAdmin`.

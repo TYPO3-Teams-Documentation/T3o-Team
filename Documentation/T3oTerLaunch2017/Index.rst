@@ -40,8 +40,8 @@ How to import the SQL:
 -  Import SQL: `mysql -ut3o -p t3o < ter-latest.sql`
 
 
-Problems and solutions
-======================
+Questions and Answers
+=====================
 
 If you encounter problems with the docker or composer environment,
 just add your questions (and if you have the answer as well)
@@ -71,4 +71,44 @@ Solr
 
 To get the solr connection working, you need to add the "Search - Base Configuration (solr)"
 to the root template, and the "Initialize Solr Connections" in the "cache-menu" top right.
+
+
+.. _ter-project-phpMyAdmin:
+
+phpMyAdmin
+==========
+
+1. Start the :ref:`nginx-proxy`.
+
+2. Start TYPO3 by running `make up` in the clone of https://git-t3o.typo3.org/t3o/ter
+
+3. Use `docker ps` to list the running docker containers. Find the name of the container
+   with the database server. It is `ter_db_1` for example.
+   Let's name it `DBSERVER` and set `DBSERVER=ter_db_1`.
+
+4. Use `docker network ls` to list networks. `ter_default` is what we are looking for.
+   Let's define that as `DBNETWORK=ter_default`.
+
+5. Run phpMyAdmin in a Docker container with the name `phpadmin_ter`. Run as a daemon,
+   remove the container after stopping, link to the container with the DB server
+   in the appropriate network::
+
+   ➜ DBSERVER=ter_db_1
+   ➜ DBNETWORK=ter_default
+   ➜ docker run --name phpadmin_ter -d --rm  \
+        --link=${DBSERVER}:db --network=${DBNETWORK} \
+        -p 8181:80  phpmyadmin/phpmyadmin
+
+6. Find the username and password for the database in the :file:`.env` file of the project repository.
+
+7. Direct your browser to the phpMyAdmin login form at http://127.0.0.1:8181
+
+8. Use the values of DATABASE_USER and DATABASE_USER_PASSWORD from the :file:`.env` file
+   to login.
+
+9. Stop the container when done, thereby removing it::
+
+      docker stop phpadmin_ter
+
+Have fun!
 

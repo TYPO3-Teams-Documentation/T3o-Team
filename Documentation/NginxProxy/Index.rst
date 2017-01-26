@@ -2,8 +2,10 @@
 
 .. include:: ../Includes.txt
 
+.. _Nginx-Proxy:
+
 ===============
-The Nginx-Proxy
+Nginx-Proxy
 ===============
 
 
