@@ -44,5 +44,6 @@ typo3.org-Team At Work
 
    T3oRelaunch2017/Index
    T3oTerLaunch2017/Index
+   NginxProxy/Index
    Knowledgebase/Index
 

@@ -1,6 +1,8 @@
 
 .. include:: ../Includes.txt
 
+.. _Relaunch-2017-typo3-org:
+
 =======================
 Relaunch 2017 typo3.org
 =======================
@@ -17,6 +19,7 @@ Repository
 This is the main repository for typo3.org: https://git-t3o.typo3.org/t3o/typo3.org
 
 We are using this :ref:`Gitlab-Workflow`.
+
 
 Prerequisites
 =============

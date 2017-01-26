@@ -1,6 +1,8 @@
 
 .. include:: ../Includes.txt
 
+.. _Launch-2017-ter-typo3-org:
+
 =========================
 Launch 2017 ter.typo3.org
 =========================
