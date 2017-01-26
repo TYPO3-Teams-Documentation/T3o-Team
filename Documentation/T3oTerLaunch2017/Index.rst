@@ -93,11 +93,11 @@ phpMyAdmin
    remove the container after stopping, link to the container with the DB server
    in the appropriate network::
 
-   ➜ DBSERVER=ter_db_1
-   ➜ DBNETWORK=ter_default
-   ➜ docker run --name phpadmin_ter -d --rm  \
-        --link=${DBSERVER}:db --network=${DBNETWORK} \
-        -p 8181:80  phpmyadmin/phpmyadmin
+      ➜ DBSERVER=ter_db_1
+      ➜ DBNETWORK=ter_default
+      ➜ docker run --name phpadmin_ter -d --rm  \
+           --link=${DBSERVER}:db --network=${DBNETWORK} \
+           -p 8181:80  phpmyadmin/phpmyadmin
 
 6. Find the username and password for the database in the :file:`.env` file of the project repository.
 
