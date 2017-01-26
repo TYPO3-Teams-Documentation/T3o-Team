@@ -8,18 +8,18 @@ The Nginx-Proxy
 
 
 Both the :ref:`Relaunch-2017-typo3-org` and the :ref:`Launch-2017-ter-typo3-org`
-require the nginx proxy is running before the Docker containers that make up
+require that the nginx proxy is running before the Docker containers that make up
 the respective installation can be run.
 
 
 First run
 =========
 
-Clone nginx-proxy::
+Clone to :file:`nginx-proxy`::
 
    git clone https://github.com/torvitas/docker-nginx-proxy-configuration nginx-proxy
 
-Make sure port 80 and 443 on `localhost` are not in use.
+Make sure ports 80 and 443 on `localhost` are not in use.
 On Linux you can use `netcat` for this::
 
    ➜  ~ netcat -nvz  127.0.0.1 80 443
@@ -28,7 +28,7 @@ On Linux you can use `netcat` for this::
 
    # oops, ports 80 and 443 are in use
 
-Stop whatever service you have running there::
+Stop whatever service is running there (example)::
 
    ➜  ~ sudo service apache2 stop
    * Stopping web server apache2
@@ -41,8 +41,8 @@ Try again::
 
    # fine: ports seem to be unused
 
-The proxy will try to establish network `proxy`. If a network named `proxy`
-already exists, you can remove it like this::
+The proxy will try to create a network named `proxy`. If a network named `proxy`
+already exists, you can remove it this way::
 
    # check what networks exist
    ➜ docker network ls
@@ -50,18 +50,16 @@ already exists, you can remove it like this::
    # remove network 'proxy'
    ➜  docker network remove proxy
 
-Go to the clone::
-
-   cd nginx-proxy
-
 Run init once::
 
+   ➜  cd nginx-proxy
    ➜  nginx-proxy git:(master) ✗ make init
    docker network create proxy
    6b53bb691cf4c51e288c926bc1604315d542c17928b820b122d14edf246c9b6d
 
 Build and run the proxy::
 
+   ➜  cd nginx-proxy
    ➜  nginx-proxy git:(master) ✗ make up
    docker-compose build
    Building nginx
@@ -83,6 +81,7 @@ Build and run the proxy::
 
 Start a live display of the log::
 
+   ➜  cd nginx-proxy
    ➜  make log
 
 Usual usage
