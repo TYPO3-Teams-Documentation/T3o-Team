@@ -89,4 +89,4 @@ For your convenience there are the following make jobs::
 phpMyAdmin
 ==========
 
-Find a howto at :ref:`ter-project-phpMyAdmin`.
+See this :ref:`How-to <ter-project-phpMyAdmin>`.
