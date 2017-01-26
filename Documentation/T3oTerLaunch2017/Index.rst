@@ -1,5 +1,6 @@
 
 .. include:: ../Includes.txt
+.. highlight:: shell
 
 .. _Launch-2017-ter-typo3-org:
 
