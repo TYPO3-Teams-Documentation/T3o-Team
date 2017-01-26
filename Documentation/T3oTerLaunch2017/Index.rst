@@ -109,7 +109,7 @@ phpMyAdmin
 
 9. Stop the container when done, thereby removing it::
 
-      docker stop phpadmin_ter
+      ➜ docker stop phpadmin_ter
 
 Have fun!
 
