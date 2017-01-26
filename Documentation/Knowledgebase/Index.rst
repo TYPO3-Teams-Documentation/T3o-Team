@@ -14,4 +14,5 @@ Knowledgebase
    Repositories/Index
    Docker/Index
    HowToDocument/Index
+   Team/Index
 
