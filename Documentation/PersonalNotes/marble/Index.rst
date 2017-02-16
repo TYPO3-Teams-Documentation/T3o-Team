@@ -11,3 +11,4 @@ Start Docker-TER machine on Thinkbook
 =====================================
 
 #. Shudown Apache2 to free ports 80 and 443
+
