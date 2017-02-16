@@ -19,23 +19,26 @@ Start Docker-TER machine on Thinkbook
 
    1. Check ports::
 
-      ➜  cd ~/Repositories/github.com/torvitas
-      # is_ports_are_free.sh is a script by marble
-      ➜  ./is_ports_are_free.sh 
-      is_ports_are_free 127.0.0.1 80 443
-      80 unused
-      443 unused
-      all ports are free
+         ➜  cd ~/Repositories/github.com/torvitas
+         # is_ports_are_free.sh is a script by marble
+         ➜  ./is_ports_are_free.sh 
+         is_ports_are_free 127.0.0.1 80 443
+         80 unused
+         443 unused
+         all ports are free
       
-   2. Start proxy::
+   2. Check Docker networks::
    
-      ➜  cd ~/Repositories/github.com/torvitas/nginx-proxy
-      make init up log
+         ➜  cd ~/Repositories/github.com/torvitas/nginx-proxy
+         ➜  docker network ls        # list
+         ➜  docker network rm proxy  # remove
+         ➜  make init up log
    
 
 
 #. Do::
-      cd ~//Repositories/git-t3o.typo3.org/t3o/ter
-      git reset --hard
-      git pull
-      git branch -va
+
+      ➜  cd ~//Repositories/git-t3o.typo3.org/t3o/ter
+      ➜  git reset --hard
+      ➜  git pull
+      ➜  git branch -va
