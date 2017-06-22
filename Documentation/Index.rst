@@ -39,8 +39,8 @@ typo3.org-Team At Work
 
 See also:
 
--  `what the TYPO3 Documentation Team writes 
-   <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-053/>`__
+-  `what the TYPO3 Documentation Team writes
+   <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-054/>`__
 
 
 .. toctree::
