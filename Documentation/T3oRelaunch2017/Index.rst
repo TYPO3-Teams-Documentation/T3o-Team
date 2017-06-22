@@ -92,8 +92,8 @@ phpMyAdmin
 See this :ref:`How-to <ter-project-phpMyAdmin>`.
 
 
-Define META menu 
-==========
+Define META menu
+================
 
 Go to Template extension > "Info/Modify" and set constant **{pageId}**
 
@@ -101,3 +101,4 @@ Go to Template extension > "Info/Modify" and set constant **{pageId}**
 
 or go to Template extension > "Constant editor", at section Category select "T3O PAGE-SETTINGS" and set [tx_t3olayout.page.metamenuid] constant to **{pageId}**
 where **{pageId}** is id of the page with subpages to show
+

@@ -31,20 +31,22 @@ typo3.org-Team At Work
 
 
 :Writing here:    typo3.org-Team
-:Rendered:        |today|
 :Buildinfo:       Find information about the documentation build process in `buildinfo <_buildinfo>`_
 :Markup:          Have a look at the `warnings.txt <_buildinfo/warnings.txt>`_ to see if there a
                   warnings about the reStructuredText syntax.
+:Sitemap:         :ref:`Sitemap`
+:Rendered:        |today|
 
 
-**Contents:**
 
-.. rst-class:: compactlist
 .. toctree::
+   :hidden:
 
+   Sitemap/Index
    T3oRelaunch2017/Index
    T3oTerLaunch2017/Index
    NginxProxy/Index
    Knowledgebase/Index
    PersonalNotes/Index
+   Linktargets/Index
 
