@@ -22,7 +22,7 @@ We are using feature branches and Merge Requests to push changes. Here is a shor
 General workflow
 ================
 
-#. Log in to `GitLab<https://git-t3o.typo3.org>`_
+#. Log in to `GitLab <https://git-t3o.typo3.org>`_
 #. If you don't have access to the t3o project, ask one of the masters
 #. Look into the different repositories. Priorities are:
    #. Testing and reviewing open Merge Requests (MR)
