@@ -47,11 +47,11 @@ See also:
    :hidden:
 
    Sitemap/Index
+   Knowledgebase/Index
    T3oRelaunch2017/Index
    T3oTerLaunch2017/Index
    MyT3oLaunch2017/Index
    NginxProxy/Index
-   Knowledgebase/Index
    PersonalNotes/Index
    Linktargets/Index
 
