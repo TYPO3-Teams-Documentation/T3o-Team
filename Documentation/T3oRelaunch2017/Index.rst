@@ -94,9 +94,15 @@ See this :ref:`How-to <ter-project-phpMyAdmin>`.
 Where do i find all Informations 
 ================================
 
-GoogleDrive: We store concepts and layout files at 
+GoogleDrive: We store concepts and layout files at our Google Drive:
+https://drive.google.com/drive/folders/0B2Cxq-J7cHvVc2YyNzZDU2dXMDA
 
-Layout, Issues, Boards
+typo3.org concept:
+https://docs.google.com/document/d/1Zj-SDEH-da2RBOsnpsiiZ9-VGiNsgHXceEgfDXbWcT8/edit
+
+
+Our Issue tracker is the TYPO3 Gitlab at https://git-t3o.typo3.org/t3o
+
 
 
 Where do i get needed Data
