@@ -12,17 +12,17 @@ Relaunch 2017 typo3.org
    :class: compactlist
    :backlinks: top
 
+Basissetup
+==========
+
+Get you environment working.
 
 Repository
-==========
+----------
 
 This is the main repository for typo3.org: https://git-t3o.typo3.org/t3o/typo3.org
 
 We are using this :ref:`Gitlab-Workflow`.
-
-
-Prerequisites
-=============
 
 docker engine
 -------------
@@ -42,7 +42,7 @@ nginx proxy
 
 
 Start the dockerized server
-===========================
+---------------------------
 
 Quickstart to get things running::
 
@@ -74,7 +74,7 @@ Have a look at :file:`AdditionalConfiguration.php`::
       data/typo3/html/typo3conf/AdditionalConfiguration.php
 
 Composer
-========
+--------
 
 Example::
 
@@ -87,13 +87,40 @@ For your convenience there are the following make jobs::
 
 
 phpMyAdmin
-==========
+----------
 
 See this :ref:`How-to <ter-project-phpMyAdmin>`.
 
+Where do i find all Informations 
+================================
+
+GoogleDrive: We store concepts and layout files at 
+
+Layout, Issues, Boards
+
+
+Where do i get needed Data
+==========================
+TODO (Database / Fileadmin / Asset)
+
+
+How the Deployments work for all webs
+=====================================
+TODO
+
+
+Which Contentelements exists and how they are solved in the Backend/Frontend
+============================================================================
+
+All elements are documented at https://stage.typo3.org/index.php?id=60
+
+
+Which settings can be done in the diffrent Installations concerning the Frontend
+================================================================================
+
 
 Define META menu
-================
+----------------
 
 Go to Template extension > "Info/Modify" and set constant **{pageId}**
 
