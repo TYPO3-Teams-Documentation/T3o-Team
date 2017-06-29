@@ -91,7 +91,7 @@ phpMyAdmin
 
 See this :ref:`How-to <ter-project-phpMyAdmin>`.
 
-Where do i find all Informations 
+Where do I find all informations
 ================================
 
 GoogleDrive: We store concepts and layout files at our Google Drive:
@@ -104,10 +104,22 @@ https://docs.google.com/document/d/1Zj-SDEH-da2RBOsnpsiiZ9-VGiNsgHXceEgfDXbWcT8/
 Our Issue tracker is the TYPO3 Gitlab at https://git-t3o.typo3.org/t3o
 
 
+Where do I get the latest dump?
+===============================
 
-Where do i get needed Data
-==========================
-TODO (Database / Fileadmin / Asset)
+Here you can find the latest dump of all assets:
+https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets
+
+How to import:
+
+#. Go to typo3.org root (where composer.json is located)
+#. Download the latest dump and unzip
+#. Unpack the SQL file: `gunzip assets/db.sql.gz`
+#. Import the SQL (by using a GUI like HeidiSQL/SequelPro or by command if you have direct access to the database)
+#. Sync the fileadmin: `rsync -arPze --delete assets/html/fileadmin html/`
+#. Clear the caches
+#. Remove folder and ZIP file
+#. Et voilá
 
 
 How the Deployments work for all webs
