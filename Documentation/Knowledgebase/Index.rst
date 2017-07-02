@@ -2,17 +2,18 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-======================
+=============
 Knowledgebase
-======================
+=============
 
 
 
 .. toctree::
    :hidden:
 
-   Repositories/Index
    Docker/Index
+   Databases/Index
+   Repositories/Index
    HowToDocument/Index
    Team/Index
 
