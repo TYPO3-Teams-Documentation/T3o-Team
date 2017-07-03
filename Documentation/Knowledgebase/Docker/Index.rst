@@ -31,6 +31,8 @@ Requirements for working on t3o on local Docker
 - For SSL connection and DNS you need a `nginx proxy <https://github.com/torvitas/docker-nginx-proxy-configuration>`__
 - Use the main docker environment on `t3o GitLab <https://git-t3o.typo3.org/t3o/ter-docker-minimal>`__
 - An existing account on GitLab with access to the t3o project
+- Make sure that the composer home directory is `~/.composer/` by `export COMPOSER_HOME="~/.composer/"`
+
 
 
 Step by step installation for Docker
