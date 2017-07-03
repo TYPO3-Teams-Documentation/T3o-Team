@@ -37,7 +37,7 @@ Step by step installation for Docker
 ------------------------------------
 
 #. Go to your local folder where you want to setup, e.g. ~/Docker/
-#. Clone the nginx proxy with `git clone https://github.com/torvitas/docker-nginx-proxy-configuration.git nginx-proxy`
+#. Clone the nginx proxy with `git clone https://github.com/torvitas/docker-nginx-proxy-configuration.git nginx-proxy`. More to see at :ref:`_Nginx-Proxy`.
 #. `cd nginx-proxy`
 #. `make init up`
 #. `cd ..`
