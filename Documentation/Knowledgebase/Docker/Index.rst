@@ -37,9 +37,8 @@ Step by step installation for Docker
 ------------------------------------
 
 #. Go to your local folder where you want to setup, e.g. ~/Docker/
-#. Clone the nginx proxy with `git clone https://github.com/torvitas/docker-nginx-proxy-configuration.git nginx-proxy`. More to see at :ref:`_Nginx-Proxy`.
-#. `cd nginx-proxy`
-#. `make init up`
+#. Clone the nginx proxy with `git clone https://github.com/torvitas/docker-nginx-proxy-configuration.git nginx-proxy`.
+#. To run the nginx proxy, see :ref:`_Nginx-Proxy`.
 #. `cd ..`
 #. Clone the docker environment with `git clone https://[your typo3.org username]@git-t3o.typo3.org/t3o/ter-docker-minimal.git main-t3o`
 #. `cd main-t3o`
