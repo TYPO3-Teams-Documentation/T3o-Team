@@ -7,8 +7,8 @@ Docker
 
 
 .. contents:: On this page:
-:local:
-   :class: compactlist
+    :local:
+    :class: compactlist
 
     :backlinks: top
 
