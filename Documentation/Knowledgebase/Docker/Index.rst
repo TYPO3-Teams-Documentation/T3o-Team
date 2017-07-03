@@ -48,6 +48,24 @@ Step by step installation for Docker
 #. Now the basic installation is set up and running.
 
 
+Important make commands
+-----------------------
+
+make up
+    Starts all docker containers or recreates them after changes in docker-compose.yml
+
+make stop
+    Stops all docker containers
+
+make down
+    Destroys all DB data by removing the containers
+
+make clear-cache-[t3o|ter]
+    Clears the cache by using TYPO3 console
+
+make update-system-[t3o|ter]
+    Runs the commands `composer install`, `install:generatepackagestates 0 1`, `database:updateschema` and `cache:clear --force`
+
 Tips
 ====
 
