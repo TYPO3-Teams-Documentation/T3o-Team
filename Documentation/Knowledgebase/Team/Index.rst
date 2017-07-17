@@ -9,37 +9,42 @@ About The Team
 
 Associated with the team:
 
-======================== ==================== ===================================================
-    Name                 Team                 Github
-======================== ==================== ===================================================
-Andreas Beutel           server               `abeutel <https://github.com/abeutel/>`__
-Andreas Wolf             dev                  `andreaswolf <https://github.com/andreaswolf>`__
-Andri Steiner            server               `andristeiner <https://github.com/andristeiner/>`__
-Bastian Bringenberg      ldap                 `Avalarion <https://github.com/Avalarion/>`__
+======================== ====================
+    Name                 Team
+======================== ====================
+Andreas Beutel           server
+Andreas Wolf             dev
+Andri Steiner            server
+Bastian Bringenberg      ldap
 Boris Schauer            integration
 Fabian Stein             design
-Harry Glatz              integration          `randomresult <https://github.com/randomresult/>`__
+Harry Glatz              integration
 Ina Burkardt             content
 Jens Seiler              integration
-Jonathan Iroulin         dev                  `joniroutypo3 <https://github.com/joniroutypo3/>`__
-Marco Seiler             content/integration  `marcoseiler <https://github.com/marcoseiler/>`__
+Jens Jacobsen            dev
+Jonathan Iroulin         dev
+Lukas Raschke            integration
+Marco Seiler             content/integration
+Marcus Schwemer          design/integration
 Markus Sommer            design/integration
-Martin Bless             docs                 `marble <https://github.com/marble/>`__
+Martin Bless             docs
 Mathias Bolt Lesniak     content
 Mirjam Bornschein        integration
-Michael Stucki           server               `stucki <https://github.com/stucki/>`__
+Michael Stucki           server
 Michel Loew              design
 Miro Olma                integration
 Oliver Oertel            design
 Paul Weiske              integration
-Sascha Schmidt           gitlab/docker        `torvitas <https://github.com/torvitas/>`__
+Philipp Hamid            integration
+Sascha Schmidt           gitlab/docker
 Sebastian Diez           dev
 Stefan Busemann          content/dev
-Steffen Gebert           server               `StephenKing <https://github.com/StephenKing/>`__
+Steffen Gebert           server
 Sven Burkert             dev
-Thomas Löffler           lead/dev             `spoonerWeb <https://github.com/spoonerWeb/>`__
+Thomas Löffler           lead/dev
 Thorsten Griebenow       integration
-Tomas Norre Mikkelsen    dev                  `tomasnorre <https://github.com/tomasnorre/>`__
+Tomas Norre Mikkelsen    dev
+Viktor Ayzenshtadt       integration
 Victoria Husaruk         integration
 Yaroslav Trach           integration
-======================== ==================== ===================================================
+======================== ====================
