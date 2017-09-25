@@ -47,6 +47,7 @@ See also:
    :hidden:
 
    Sitemap/Index
+   Contribution/Index
    Knowledgebase/Index
    T3oRelaunch2017/Index
    T3oTerLaunch2017/Index
