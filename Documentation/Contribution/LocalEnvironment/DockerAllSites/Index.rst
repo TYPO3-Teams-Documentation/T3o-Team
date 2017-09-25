@@ -1,9 +1,9 @@
 .. include:: ../../../Includes.txt
 .. highlight:: shell
 
-======
-Docker
-======
+============================================
+Installation of all t3o websites with Docker
+============================================
 
 
 .. contents:: On this page:

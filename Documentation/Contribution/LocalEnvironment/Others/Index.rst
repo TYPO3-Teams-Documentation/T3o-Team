@@ -1,9 +1,9 @@
 .. include:: ../../../Includes.txt
 .. highlight:: shell
 
-======
-Docker
-======
+====================
+General Installation
+====================
 
 
 .. contents:: On this page:
