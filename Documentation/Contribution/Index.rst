@@ -12,7 +12,7 @@ Contribution
    :hidden:
 
    Workflow/Index
-   LocalEnvironment/DockerAllSites/Index
    LocalEnvironment/Others/Index
+   LocalEnvironment/DockerAllSites/Index
    FrequentlyAskedQuestions/Index
 

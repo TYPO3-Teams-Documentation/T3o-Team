@@ -4,9 +4,9 @@
 
 .. _Nginx-Proxy:
 
-===============
+===========
 Nginx-Proxy
-===============
+===========
 
 
 Both the :ref:`Relaunch-2017-typo3-org` and the :ref:`Launch-2017-ter-typo3-org`
