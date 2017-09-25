@@ -4,6 +4,7 @@
 
 .. _Gitlab-Workflow:
 
+===============
 Gitlab Workflow
 ===============
 
