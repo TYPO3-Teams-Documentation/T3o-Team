@@ -80,6 +80,8 @@ Build CSS and JS
 #. run `npm install` on terminal/bash/shell
 #. run `npm run build`
 
+For all those who dont want or are not able to build these files using npm the latest version of this files can be found `here <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/develop/download?job=layout>`_.
+
 ***************************
 Get TYPO3 up and running
 ***************************
