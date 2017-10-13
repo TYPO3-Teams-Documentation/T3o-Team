@@ -80,7 +80,7 @@ Build CSS and JS
 #. run `npm install` on terminal/bash/shell
 #. run `npm run build`
 
-For all those who dont want or are not able to build these files using npm the latest version of this files can be found `here <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/develop/download?job=layout>`_.
+For all those who dont want or are not able to build these files using npm the latest version of this files are also included in the asset-download. Simply copy the folders `Images`, `JavaScript` and `Css` to `html/typo3conf/ext/t3olayout/Resources/Public` and you will be able to see the frontend as well.
 
 ***************************
 Get TYPO3 up and running
