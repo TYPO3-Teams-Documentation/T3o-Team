@@ -69,7 +69,7 @@ Clone and prepare files
 Download and install assets
 ***************************
 
-#. Download the database dump and assets from GitLab. They can be found `here <https://git-t3o.typo3.org/t3o/typo3.org/pipelines>`_. On the right site, you will find a downloadbutton to get the latest "Artefacts". Get this download and copy the folder `fileadmin` to the folder `html`
+#. Download the database dump and assets from GitLab. They can be found `here <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets>`_. Get this download and copy the folder `fileadmin` to the folder `html`
 #. Import the DB.sql provided with the Artefacts into your local DB
 
 ***************************
