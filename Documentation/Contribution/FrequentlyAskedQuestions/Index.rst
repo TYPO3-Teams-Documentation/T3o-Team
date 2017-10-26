@@ -1,58 +1,59 @@
 .. include:: ../../Includes.txt
 .. highlight:: shell
 
-==========================
-Frequently Asked Questions
-==========================
+================================
+FAQ - Frequently Asked Questions
+================================
 
 
 .. contents:: On this page:
-    :local:
-    :class: compactlist
+   :backlinks: top
+   :class: compactlist
+   :local:
 
-    :backlinks: top
 
 .. _FAQ:
 
 Frequently asked questions
 ==========================
 
-If you encounter problems with the local environment,
-just add your questions (and if you have the answer as well)
+If you encounter problems with the local environment, just add your questions.
+And don't forget to enter answers as well!
 
 
-which branch do I need to work in?
-----------------------------------
+In which branch do I work?
+--------------------------
 
-For all projects you need to work in a feature branch, see :ref:`Gitlab-Workflow`.
-
-
-make init up throws exception that an extension is not activated
-----------------------------------------------------------------
-
-Symptom::
-
-   [ BadFunctionCallException ]
-    #1365429656: TYPO3 Fatal Error: Extension key "ext_key" is NOT loaded!
-    thrown in file typo3/sysext/core/Classes/Utility/ExtensionManagementUtility.php
-    in line 132
-
-Solution::
-
-   ➜ Switch inside your local environment if needed
-   ➜ Change to the root directory of our project (where `htdocs` is the subdirectory)
-   ➜ bin/typo3cms install:generatepackagestates 0 1
+For all projects you need to work in a feature branch. Check
+:ref:`Gitlab-Workflow` to find out how the branch is created.
 
 
-I have a too old php version
-----------------------------
+`make init up` throws an exception "extension is not activated"
+---------------------------------------------------------------
 
-Symptom::
+Symptom:
+   ::
+      [ BadFunctionCallException ]
+      #1365429656: TYPO3 Fatal Error: Extension key "ext_key" is NOT loaded!
+      thrown in file typo3/sysext/core/Classes/Utility/ExtensionManagementUtility.php
+      in line 132
 
-   composer says to me that the php version is not up to date
+Solution:
+   -  Switch to your local environment
 
-Solution::
+   -  Change to the root directory of our project. You should have a
+      subdirectory `htdocs` there.
 
-   ➜ Switch inside your local environment if needed
-   ➜ Update the php version
+   -  run `bin/typo3cms install:generatepackagestates 0 1`
+
+
+My PHP version is too old
+-------------------------
+
+Symptom:
+   `composer` is telling me the PHP version is not up to date
+
+Solution:
+   -  Go to your local environment
+   -  Update PHP
 

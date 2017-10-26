@@ -91,6 +91,7 @@ phpMyAdmin
 
 See this :ref:`How-to <ter-project-phpMyAdmin>`.
 
+
 Where do I find all informations
 ================================
 

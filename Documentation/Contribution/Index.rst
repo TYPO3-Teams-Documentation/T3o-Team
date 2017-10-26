@@ -2,14 +2,14 @@
 .. include:: ../Includes.txt
 .. highlight:: rst
 
-============
-Contribution
-============
+=================
+How to contribute
+=================
 
-
+Main chapters:
 
 .. toctree::
-   :hidden:
+   :titlesonly:
 
    Workflow/Index
    LocalEnvironment/Others/Index

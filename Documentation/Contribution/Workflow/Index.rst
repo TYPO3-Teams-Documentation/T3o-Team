@@ -2,45 +2,77 @@
 .. include:: ../../Includes.txt
 .. highlight:: shell
 
+.. in general we are using 79 characters at maximum. This is no strict rule.
+
 .. _Gitlab-Workflow:
 
-===============
-Gitlab Workflow
-===============
-
-We are using feature branches and Merge Requests to push changes. Here is a short documentation about the workflow:
-
-General workflow
+================
+Gitlab Workflows
 ================
 
-#. Log in to `GitLab <https://git-t3o.typo3.org>`_
-#. If you don't have access to the t3o project, ask one of the masters
+We are using feature branches and merge requests to push changes. Here we
+present a short documentation about the workflow.
+
+Terms:
+
+- WIP = Work In Progress
+- MR = Merge Request
+
+General Workflow
+================
+
+.. rst-class:: bignums
+
+#. Log in to `GitLab <https://git-t3o.typo3.org>`_.
+
+#. If you don't have access to the t3o project, ask one of the masters.
+
 #. Look into the different repositories. Priorities are:
-    #. Testing and reviewing open Merge Requests (MR)
-    #. Solving issues
-    #. Creating issues
-#. If you have found a MR or issue, assign it to you
-#. Work
+
+   #. Testing and reviewing open merge requests
+   #. Solving issues
+   #. Creating issues
+
+#. If you have found a MR or issue, assign it to you.
+
+#. Work!
 
 
-Issue workflow
+Issue Workflow
 ==============
 
-#. Grab an issue and assign it to yourself
-#. Click on the green button on the right to create a Merge Request (which is WIP by default) if it's not done yet
-#. Go to your local repository and ``git fetch``. You should see now the new branch with the number of your issue
-#. Switch to the branch
-#. Work
-    - You can do small commits and push them
-    - Every commit will be listed in the MR
-#. Create a MR (by removing the "WIP:" in the MR title)
+.. rst-class:: bignums
+
+#. Grab an issue and assign it to yourself.
+
+#. Click on the green button on the right to create a merge request. It is
+   WIP (Work In Progress) by default if it's not done yet.
+
+#. Go to your local repository and do `git fetch``. Now you should see now the
+   new branch with the number of your issue.
+
+#. Switch to the branch.
+
+#. Work!
+
+   - You can do small commits and push them.
+   - Every commit will be listed in the MR
+
+#. Create a MR thereby removing the "WIP:" from the title.
 
 
-Merge Request workflow
+Merge Request Workflow
 ======================
 
-#. Grab a MR and assign it to yourself
-#. Review the code
-#. Test the code on your local development
-#. All okay? Merge it
-#. You have code improvements or it's not working? Assign it back to the owner
+.. rst-class:: bignums
+
+#. Grab a MR and assign it to yourself.
+
+#. Review the code.
+
+#. Test the code locally.
+
+#. *Everything* is okay? Only then do the merge!
+
+#. Something isn't perfect? You want the code to be improved first? Then assign
+   it back to the owner again.

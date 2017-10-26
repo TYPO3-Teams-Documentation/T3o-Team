@@ -1,8 +1,8 @@
-.. include:: ../Includes.txt
+.. include:: ../../Includes.txt
 
-=====================
-Log of Thomas Löffler
-=====================
+=======================
+Notes of Thomas Löffler
+=======================
 
 
 News migration
