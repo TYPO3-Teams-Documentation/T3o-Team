@@ -47,6 +47,19 @@ Step by step installation for Docker
 #. Now the basic installation is set up and running.
 
 
+Subsequent works
+----------------
+
+If you don't get a website connection, you need to add all websites to your /etc/hosts file:
+
+::
+
+    127.0.0.1  t3o-typo3.dev.localhost
+    127.0.0.1  ter-typo3.dev.localhost
+    127.0.0.1  my-typo3.dev.localhost
+    127.0.0.1  solr-typo3.dev.localhost
+
+
 Important make commands
 -----------------------
 
@@ -59,11 +72,14 @@ make stop
 make down
     Destroys all DB data by removing the containers
 
-make clear-cache-[t3o|ter]
+make clear-cache-[t3o|ter|my]
     Clears the cache by using TYPO3 console
 
-make update-system-[t3o|ter]
+make update-system-[t3o|ter|my]
     Runs the commands `composer install`, `install:generatepackagestates 0 1`, `database:updateschema` and `cache:clear --force`
+
+make packagestates(-[t3o|ter|my])
+    Runs the command `install:generatepackagestates 0 1` for all pages or for the given one
 
 Tips
 ====
