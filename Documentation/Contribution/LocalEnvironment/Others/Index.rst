@@ -1,9 +1,9 @@
 .. include:: ../../../Includes.txt
 .. highlight:: shell
 
-====================
-General Installation
-====================
+===========================
+Setup own local environment
+===========================
 
 .. contents:: On this page:
    :backlinks: top

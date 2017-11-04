@@ -85,6 +85,19 @@ Step by step: Basic Installation using Docker
 At this point the **basic installation** should be up up and running.
 
 
+Subsequent works
+----------------
+
+If you don't get a website connection, you need to add all websites to your /etc/hosts file:
+
+::
+
+    127.0.0.1  t3o-typo3.dev.localhost
+    127.0.0.1  ter-typo3.dev.localhost
+    127.0.0.1  my-typo3.dev.localhost
+    127.0.0.1  solr-typo3.dev.localhost
+
+
 Important `make` commands
 -------------------------
 
