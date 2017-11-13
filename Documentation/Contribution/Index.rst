@@ -16,3 +16,10 @@ Main chapters:
    LocalEnvironment/DockerAllSites/Index
    FrequentlyAskedQuestions/Index
 
+
+==============
+Getting access
+==============
+
+To get access to our repositories, please contact
+Thomas Löffler (@spoonerweb) in Slack.
