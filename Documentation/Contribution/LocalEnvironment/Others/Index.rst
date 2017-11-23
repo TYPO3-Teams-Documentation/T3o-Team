@@ -36,14 +36,14 @@ Repositories
 You can find all needed Repositories at our `Gitlab server
 <https://git-t3o.typo3.org/>`__.
 
-To gain access to this repos you need to have a typo3.org Account. If you are
+To gain access to these repos you need to have a typo3.org Account. If you are
 not able to login to Gitlab, the reason for this might be, that your Username
 is not present in our new LDAP environment. To solve this go to
 https://typo3.org/ and log in there once.
 
 You will find a repository for each project (typo3.org, extensions.typo3.org,
-my.typo3.org) . As these repositories share a template extension (t3olayout)
-you will also find this one and all others. The extensions will be loaded via
+my.typo3.org). As these repositories share the same template extension (t3olayout)
+you will also find this one and all the others. The extensions will be loaded via
 composer. Issues (Tickets) can be found in this repositories and you will need
 to send pull requests to them directly.
 
@@ -51,11 +51,11 @@ In this example we will guide you through the process of setting up an
 installation for typo3.org.
 
 We provide the needed assets for this project (fileadmin and Database).
-You can download this assets in the Pipeline of Gitlab
+You can download thess assets in the Pipeline of Gitlab
 (link will be provided below) - so you dont have to take care of contents and
 stuff at all. This ensures that you will have an installation with the
-latest content up and running. Only thing is, that you need to have a
-backend-user. If this doesnt exists on stage.typo3.org or typo3.org you need to
+latest content up and running. The only thing is that you need to have a
+backend-user. If this isn't the case on stage.typo3.org or typo3.org you need to
 create one using the installtool.
 
 Installation
@@ -66,7 +66,7 @@ Clone and prepare files
 
 .. rst-class:: bignums
 
-#. Clone your repository (in this case the one for typo3.org -
+#. Clone your repository (in case for typo3.org -
    `find it here <https://git-t3o.typo3.org/t3o/typo3.org>`_)
 
 #. Create a new host and point your Document Root to the subdirectory
@@ -130,7 +130,7 @@ Get TYPO3 up and running
    The standard password (provided in :file:`AdditionalConfiguration.php`) is
    `joh316`
 
-#. Scoll down to the tab 'important actions'. That is the startpage of the
+#. Scroll down to the tab 'important actions'. That is the start page of the
    installtool. At the bottom of the page you will find the possibility to
    create a new backend user. Create one and login to the backend at
    `http(s)://yourinstall.local/typo3/`
