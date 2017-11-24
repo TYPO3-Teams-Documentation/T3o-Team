@@ -30,7 +30,7 @@ t3o team
    Think of it as key-value pairs.
 
 
-:Writing here:    typo3.org-Team
+:Writing here:    t3o team - it's about typo3.org and related pages
 :Buildinfo:       Find information about the documentation build process in `buildinfo <_buildinfo>`_
 :Markup:          Have a look at the `warnings.txt <_buildinfo/warnings.txt>`_ to see if there a
                   warnings about the reStructuredText syntax.
