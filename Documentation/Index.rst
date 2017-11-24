@@ -21,9 +21,9 @@
 .. The following, first section (= headline) is the 'Document Title'.
 
 
-======================
-typo3.org-Team At Work
-======================
+========
+t3o team
+========
 
 
 .. The following is 'field list' which is rendered as a horizontal table.
