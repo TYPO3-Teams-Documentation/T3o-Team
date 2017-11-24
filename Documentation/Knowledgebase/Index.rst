@@ -14,6 +14,7 @@ Knowledgebase
    Docker/Index
    Databases/Index
    Repositories/Index
+   LDAP/Index
    HowToDocument/Index
    Team/Index
 
