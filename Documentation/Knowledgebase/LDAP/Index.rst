@@ -10,7 +10,7 @@ LDAP
 Group Specification
 ===================
 
-In LDAP it’s possible to set n attributes named isMemberOf for each user.
+In LDAP it’s possible to set *n* attributes named isMemberOf for each user.
 This attribute will be used to set users in different groups.
 
 General syntax:
