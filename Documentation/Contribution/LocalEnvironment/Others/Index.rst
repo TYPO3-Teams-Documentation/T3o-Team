@@ -51,7 +51,7 @@ In this example we will guide you through the process of setting up an
 installation for typo3.org.
 
 We provide the needed assets for this project (fileadmin and Database).
-You can download thess assets in the Pipeline of Gitlab
+You can download these assets in the Pipeline of Gitlab
 (link will be provided below) - so you dont have to take care of contents and
 stuff at all. This ensures that you will have an installation with the
 latest content up and running. The only thing is that you need to have a
