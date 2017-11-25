@@ -7,7 +7,7 @@ About The Team
 ==============
 
 
-Associated with the team:
+Associated with the team (alphabetical order):
 
 ======================== ====================
     Name                 Team
@@ -15,8 +15,10 @@ Associated with the team:
 Andreas Beutel           server
 Andreas Wolf             dev
 Andri Steiner            server
+Arnd Messer              integration
 Bastian Bringenberg      ldap
 Boris Schauer            integration
+Christian Knauf          integration
 Fabian Stein             design
 Harry Glatz              integration
 Ina Burkardt             content
