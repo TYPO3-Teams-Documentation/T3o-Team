@@ -23,11 +23,11 @@ machine or with help of Virtual Machines like Vagrant, Docker, XAMPP, MAMP, etc.
 If you have a local web server running, be sure you have all requirements
 needed for using TYPO3 8 LTS:
 
-#. PHP 7 or higher
+#. PHP 7.0 or PHP 7.1
 
 #. A database (we are using MariaDB)
 
-#. If you want to work on the TER project you do need a Solr Server.
+#. If you want to work on the TER project you do need a Solr Server (v6.6).
    This is optional for the typo3.org project.
 
 
