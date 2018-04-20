@@ -12,5 +12,6 @@ Main chapters:
    :titlesonly:
 
    Others/Index
+   Ddev/Index
    DockerAllSites/Index
 

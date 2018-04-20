@@ -1,0 +1,126 @@
+.. include:: ../../../Includes.txt
+.. highlight:: shell
+
+=====================================
+Setup ddev environment (docker based)
+=====================================
+
+.. contents:: On this page:
+   :backlinks: top
+   :class: compactlist
+   :local:
+
+
+Local installation of one of the typo3.org sites
+================================================
+
+Requirements
+------------
+
+All you need is composer, ddev and Docker installed.
+
+Repositories
+------------
+You can find all needed Repositories at our `Gitlab server
+<https://git-t3o.typo3.org/>`__.
+
+To gain access to these repos you need to have a typo3.org account. If you are
+not able to login to Gitlab, the reason for this might be, that your Username
+is not present in our new LDAP environment. To solve this go to
+https://typo3.org/ and log in there once.
+
+You will find a repository for each project (typo3.org, extensions.typo3.org,
+my.typo3.org). As these repositories share the same template extension (t3olayout)
+you will also find this one and all the others. The extensions will be loaded via
+composer. Issues (tickets) can be found in this repositories and you will need
+to send pull requests to them directly.
+
+In this example we will guide you through the process of setting up an
+installation for typo3.org.
+
+We provide the needed assets for this project (fileadmin and database).
+You can download these assets in the pipeline of Gitlab
+(link will be provided below) - so you dont have to take care of contents and
+stuff at all. This ensures that you will have an installation with the
+latest content up and running. The only thing is that you need to have a
+backend-user. If this isn't the case on stage.typo3.org or typo3.org you need to
+create one using the installtool.
+
+Installation
+------------
+
+Preparation
+~~~~~~~~~~~
+
+.. rst-class:: bignums
+
+#. Install Docker - `find it here <https://www.docker.com/community-edition#/download>`_
+
+#. Install ddev - `find it here <https://ddev.readthedocs.io/en/latest/#installation>`_
+
+#. Install composer - `find it here <https://getcomposer.org/download/>`_
+
+
+Clone and prepare files
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rst-class:: bignums
+
+#. Clone your repository (in case for typo3.org -
+   `find it here <https://git-t3o.typo3.org/t3o/typo3.org>`_)
+
+#. cd `path/to/your/repository/`
+
+#. `ddev start`
+
+#. Download and extract the ZIP file with assets and DB dump, see `Download and install assets`_
+
+#. Use `ddev import-db` and follow the wizard to import the SQL file into the database
+
+#. Use `ddev import-files` and follow the wizart to import the fileadmin folder to `html/fileadmin`
+
+#. Browse to `the frontend <http://typo3.org.ddev.local/>`_ or `the backend <http://typo3.org.ddev.local/typo3/>`_
+
+
+Download and install assets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Download the `database dump and assets <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets>`_ from GitLab.
+
+
+
+Build CSS and JS
+~~~~~~~~~~~~~~~~
+
+.. rst-class:: bignums
+
+#. Move to the folder :file:`html/typo3conf/ext/t3olayout/Build/`
+
+#. run `npm install` on terminal/bash/shell
+
+#. run `npm run build`
+
+   For all those who don't want to do this or are not able to build these files
+   using npm the latest version of these files are also included in the
+   asset-download. Copy the folders :file:`Images`, :file:`JavaScript` and
+   :file:`Css` to :file:`html/typo3conf/ext/t3olayout/Resources/Public`
+   and you will be able to see the frontend as well.
+
+
+Get TYPO3 up and running
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rst-class:: bignums
+
+#. If you need a user to login to the backend you need to go to the
+   installtool. Therefore you need to move to the folder
+   :file:`html/typo3conf` and create a file named :file:`ENABLE_INSTALL_TOOL`.
+   This file can be empty. Then login to
+   `http(s)://yourinstall.local/typo3/install`.
+   The standard password (provided in :file:`AdditionalConfiguration.php`) is
+   `joh316`
+
+#. Scroll down to the tab 'important actions'. That is the start page of the
+   installtool. At the bottom of the page you will find the possibility to
+   create a new backend user. Create one and login to the backend.
+
