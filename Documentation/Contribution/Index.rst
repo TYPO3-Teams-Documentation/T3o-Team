@@ -13,6 +13,7 @@ Main chapters:
 
    Workflow/Index
    LocalEnvironment/Others/Index
+   LocalEnvironment/Ddev/Index
    LocalEnvironment/DockerAllSites/Index
    FrequentlyAskedQuestions/Index
 
