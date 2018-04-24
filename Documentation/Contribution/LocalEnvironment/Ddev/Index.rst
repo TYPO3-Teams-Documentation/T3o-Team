@@ -79,6 +79,8 @@ Clone and prepare files
 
 #. Use `ddev import-files` and follow the wizart to import the fileadmin folder to `html/fileadmin`
 
+#. Copy `html/typo3conf/AdditionalConfiguration.ddev.php` to `html/typo3conf/AdditionalConfiguration.php`
+
 #. Browse to `the frontend <http://typo3.org.ddev.local/>`_ or `the backend <http://typo3.org.ddev.local/typo3/>`_
 
 
