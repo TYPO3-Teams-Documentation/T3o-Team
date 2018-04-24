@@ -71,6 +71,10 @@ Clone and prepare files
 
 #. cd `path/to/your/repository/`
 
+#. Copy the ./auth.json.example to ./auth.json
+
+#. Edit the ./auth.json file and add your gitlab (git-t3o.typo3.org) account
+
 #. `ddev start`
 
 #. Download and extract the ZIP file with assets and DB dump, see `Download and install assets`_
