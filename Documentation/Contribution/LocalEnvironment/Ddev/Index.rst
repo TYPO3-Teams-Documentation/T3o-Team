@@ -122,3 +122,23 @@ As there are no backend users in the dump, you need to setup a local admin accou
 
 #. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt.
 
+
+Use built-in Solr server
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to use the Solr server (important for TER) you need to setup the built-in Solr docker container.
+You can access the Solr admin panel: `<typo3.org.ddev.local:8983>`_
+
+.. rst-class:: bignums
+
+#. Clone the Solr core repository into the core directory used by the docker container by `git clone https://git-t3o.typo3.org/t3o/solr-core.git .ddev/solr/mycores/t3o`
+
+#. Restart ddev containers to setup the core in Solr server: `ddev restart`
+
+#. Add this line into the TypoScript root template: `plugin.tx_solr.solr.host = solr`
+
+#. Initialize the Solr connection in the caching menu in the top bar
+
+#. Move to the Solr `Info` backend module to check if the Solr connection is working
+
+
