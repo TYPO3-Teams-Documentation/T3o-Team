@@ -23,6 +23,7 @@ This is the main repository for typo3.org: https://git-t3o.typo3.org/t3o/ter
 We are using this :ref:`Gitlab-Workflow`.
 
 
+.. _ter-assets:
 
 Current TER dump
 ================

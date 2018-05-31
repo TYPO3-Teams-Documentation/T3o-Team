@@ -83,50 +83,42 @@ Clone and prepare files
 
 #. Use `ddev import-files` and follow the wizart to import the fileadmin folder to `html/fileadmin`
 
-#. Copy `html/typo3conf/AdditionalConfiguration.ddev.php` to `html/typo3conf/AdditionalConfiguration.php`
-
-#. Browse to `the frontend <http://typo3.org.ddev.local/>`_ or `the backend <http://typo3.org.ddev.local/typo3/>`_
+#. Browse to `the frontend <https://typo3.org.ddev.local/>`_ or `the backend <https://typo3.org.ddev.local/typo3/>`_
 
 
 Download and install assets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Download the `database dump and assets <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets>`_ from GitLab.
-
+Download the `database dump and assets (for e.g. typo3.org website) <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets>`_ from GitLab.
+If you need the assets from TER, look to :ref:`ter-assets`.
+You need a typo3.org account to access this file.
 
 
 Build CSS and JS
 ~~~~~~~~~~~~~~~~
 
+The CSS and JS are built on every start of ddev. If you need to update them, just run `ddev start`.
+If you work on CSS and JS, you are able to use the built-in `npm` in the docker container by
+
 .. rst-class:: bignums
 
-#. Move to the folder :file:`html/typo3conf/ext/t3olayout/Build/`
+#. Run `ddev ssh`
 
-#. run `npm install` on terminal/bash/shell
+#. Change directory to `typo3conf/ext/t3olayout/Build/`
 
-#. run `npm run build`
+#. Run `npm watch`
 
-   For all those who don't want to do this or are not able to build these files
-   using npm the latest version of these files are also included in the
-   asset-download. Copy the folders :file:`Images`, :file:`JavaScript` and
-   :file:`Css` to :file:`html/typo3conf/ext/t3olayout/Resources/Public`
-   and you will be able to see the frontend as well.
+#. Change CSS and JS, the changes are generated live
 
 
 Get TYPO3 up and running
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+As there are no backend users in the dump, you need to setup a local admin account.
+
 .. rst-class:: bignums
 
-#. If you need a user to login to the backend you need to go to the
-   installtool. Therefore you need to move to the folder
-   :file:`html/typo3conf` and create a file named :file:`ENABLE_INSTALL_TOOL`.
-   This file can be empty. Then login to
-   `http(s)://yourinstall.local/typo3/install`.
-   The standard password (provided in :file:`AdditionalConfiguration.php`) is
-   `joh316`
+#. `ddev ssh`
 
-#. Scroll down to the tab 'important actions'. That is the start page of the
-   installtool. At the bottom of the page you will find the possibility to
-   create a new backend user. Create one and login to the backend.
+#. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt.
 
