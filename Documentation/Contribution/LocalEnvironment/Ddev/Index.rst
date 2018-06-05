@@ -81,7 +81,7 @@ Clone and prepare files
 
 #. Use `ddev import-db` and follow the wizard to import the SQL file into the database
 
-#. Use `ddev import-files` and follow the wizart to import the fileadmin folder to `html/fileadmin`
+#. Move the fileadmin data from the assets download into your fileadmin folder
 
 #. Browse to `the frontend <https://typo3.org.ddev.local/>`_ or `the backend <https://typo3.org.ddev.local/typo3/>`_
 
