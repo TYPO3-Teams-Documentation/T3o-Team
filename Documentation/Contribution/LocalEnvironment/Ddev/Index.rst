@@ -62,7 +62,7 @@ Preparation
 
 
 Clone and prepare files
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 .. rst-class:: bignums
 
@@ -87,7 +87,7 @@ Clone and prepare files
 
 
 Download and install assets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Download the `database dump and assets (for e.g. typo3.org website) <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets>`_ from GitLab.
 If you need the assets from TER, look to :ref:`ter-assets`.
@@ -95,7 +95,7 @@ You need a typo3.org account to access this file.
 
 
 Build CSS and JS
-~~~~~~~~~~~~~~~~
+----------------
 
 The CSS and JS are built on every start of ddev. If you need to update them, just run `ddev start`.
 If you work on CSS and JS, you are able to use the built-in `npm` in the docker container by
@@ -112,7 +112,7 @@ If you work on CSS and JS, you are able to use the built-in `npm` in the docker 
 
 
 Get TYPO3 up and running
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 As there are no backend users in the dump, you need to setup a local admin account.
 
@@ -124,7 +124,7 @@ As there are no backend users in the dump, you need to setup a local admin accou
 
 
 Use built-in Solr server
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 If you want to use the Solr server (important for TER) you need to setup the built-in Solr docker container.
 You can access the Solr admin panel: `<typo3.org.ddev.local:8983>`_
@@ -143,7 +143,7 @@ You can access the Solr admin panel: `<typo3.org.ddev.local:8983>`_
 
 
 Troubleshooting
-~~~~~~~~~~~~~~~
+---------------
 
 The command `ddev start` fails due to npm processes. What can I do?
    You need to remove the folder `node_modules` located in `html/typo3conf/ext/t3olayout/Build/` and clear the npm caches on
