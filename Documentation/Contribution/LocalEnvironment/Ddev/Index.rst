@@ -142,3 +142,15 @@ You can access the Solr admin panel: `<typo3.org.ddev.local:8983>`_
 #. Move to the Solr `Info` backend module to check if the Solr connection is working
 
 
+Troubleshooting
+~~~~~~~~~~~~~~~
+
+The command `ddev start` fails due to npm processes. What can I do?
+   You need to remove the folder `node_modules` located in `html/typo3conf/ext/t3olayout/Build/` and clear the npm caches on
+   the machine with `ddev exec npm cache clear --force`. After that, `ddev start` should work again.
+
+I can't login in the frontend with my LDAP user.
+   First, you need to be sure that the current domain is set correctly in the domain record on your home page.
+   On the root page (PID 0) there is a configuration record for the LDAP connection. There you need to set your local host url,
+   e.g. `typo3.org.ddev.local`. After setting the correct domain the LDAP frontend login should work with your typo3.org user.
+
