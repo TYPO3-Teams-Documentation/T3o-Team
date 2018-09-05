@@ -120,7 +120,7 @@ As there are no backend users in the dump, you need to setup a local admin accou
 
 #. `ddev ssh`
 
-#. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt.
+#. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt. (You may need to call one of the scripts directly in the given directory, f.e. `php typo3-console.php backend:createadmin 
 
 
 Use built-in Solr server
