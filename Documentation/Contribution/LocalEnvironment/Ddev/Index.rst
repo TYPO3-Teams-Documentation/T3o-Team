@@ -120,6 +120,8 @@ As there are no backend users in the dump, you need to setup a local admin accou
 
 #. `ddev ssh`
 
+#. `../bin/typo3cms database:updateschema` to update the database because the dump included in the assets you downloaded is missing some tables like sys_domain or caching related ones. 
+
 #. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt. (You may need to call one of the scripts directly in the given directory, f.e. `php typo3-console.php backend:createadmin 
 
 
