@@ -66,28 +66,18 @@ Karma sources, issuers, and issuer actions are defined in TypoScript. Sources sh
 PHP Implementation
 ==================
 
-An example implementation of a karma issuer can be found in T3o\Karma\Utility\UserProfileChangeKarmaIssuerUtility
+An example implementation of a karma issuer can be found in `T3o\Karma\Utility\UserProfileChangeKarmaIssuerUtility`.
 
 .. code-block:: php
    :linenos:
 
-   public function newUserWasCreated(ExtbaseFrontendUser $frontendUser)
-   {
-      $issuerActionSettings = $this->settings['issuers'][self::ISSUER_CODE][__FUNCTION__];
-      $karmaSourceCode = $issuerActionSettings['sourceCode'];
-
-      if ($karmaSourceCode === '') {
-         throw new \Exception('Empty karma source code supplied. Please configure it in TypoScript.', 1541508560);
-      }
-
-      $this->karmaService->addKarmaToUser(
-         $issuerActionSettings['valueEarned'],
-         $frontendUser,
-         $issuerActionSettings['sourceCode'],
+      $this->karmaService->triggerKarmaIssuerActionForUser(
          self::ISSUER_CODE,
-         __FUNCTION__
+         __FUNCTION__,
+         $frontendUser
       );
-   }
+
+It is recommended to make the issuer code into a lower camel case version of the class name. In this case, the issuer code for `UserProfileChangeKarmaIssuerUtility` is `userProfileChange`. The issuer action name is the method name, i.e. `newUserWasCreated`.
 
 
 SOAP API
