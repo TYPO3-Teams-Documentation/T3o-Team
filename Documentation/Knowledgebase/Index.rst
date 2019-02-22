@@ -15,6 +15,7 @@ Knowledgebase
    Databases/Index
    Repositories/Index
    LDAP/Index
+   Karma/Index
    HowToDocument/Index
    Team/Index
 
