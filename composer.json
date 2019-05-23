@@ -1,0 +1,9 @@
+{
+    "name": "typo3/team-t3oteam",
+    "type": "typo3-cms-documentation",
+    "description": "This is where the t3o team documents all of its projects.",
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^9.5"
+    }
+}
