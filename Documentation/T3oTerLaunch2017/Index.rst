@@ -36,8 +36,8 @@ How to import:
 #. Go to TER root (where composer.json is located)
 #. Download the latest dump and unzip
 #. Unpack the SQL file: `gunzip assets/db.sql.gz`
-#. Import the SQL (by using a GUI like HeidiSQL/SequelPro or by command if you have direct access to the database)
-#. Sync the fileadmin: `rsync -arPze --delete assets/html/fileadmin html/`
+#. Import the SQL by CLI `ddev import-db --src=assets/db.sql` or Import the SQL (by using a GUI like HeidiSQL/SequelPro or by command if you have direct access to the database)
+#. Sync the fileadmin: `rsync -arPze --delete assets/html/fileadmin public/`
 #. Clear the caches
 #. Remove folder and ZIP file
 #. Et voilá
