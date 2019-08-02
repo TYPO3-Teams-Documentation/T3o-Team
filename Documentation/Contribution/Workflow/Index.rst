@@ -48,7 +48,7 @@ Issue Workflow
 #. Click on the green button on the right to create a merge request. It is
    WIP (Work In Progress) by default if it's not done yet.
 
-#. Go to your local repository and do `git fetch``. Now you should see now the
+#. Go to your local repository and do `git fetch``. Now you should see the
    new branch with the number of your issue.
 
 #. Switch to the branch.
