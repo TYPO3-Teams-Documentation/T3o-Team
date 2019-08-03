@@ -62,7 +62,7 @@ Symptom::
 Solution::
 
    ➜ cd <docker-container-root-dir>
-   ➜ docker-composer exec php bash
+   ➜ docker-compose exec php bash
    bash-php# rm -rf /var/www/html/typo3temp/
    bash-php# exit
    ➜ make reset
