@@ -49,10 +49,10 @@ See also:
    Sitemap/Index
    Contribution/Index
    Knowledgebase/Index
-   T3oRelaunch2017/Index
-   T3oTerLaunch2017/Index
-   MyT3oLaunch2017/Index
    NginxProxy/Index
    PersonalNotes/Index
    Linktargets/Index
+   typo3.org/Index
+   extensions.typo3.org/Index
+   my.typo3.org/Index
 
