@@ -50,7 +50,7 @@ Clone and prepare files
 
 #. Use `ddev import-db` and follow the wizard to import the SQL file into the database
 
-#. Browse to `the frontend <https://typo3.org.ddev.local/>`_ or `the backend <https://typo3.org.ddev.local/typo3/>`_
+#. Browse to `the frontend <https://typo3.org.ddev.site/>`_ or `the backend <https://typo3.org.ddev.site/typo3/>`_
 
 
 Download assets
