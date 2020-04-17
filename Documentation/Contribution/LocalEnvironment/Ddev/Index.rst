@@ -50,7 +50,7 @@ Clone and prepare files
 
 #. Use `ddev import-db` and follow the wizard to import the SQL file into the database
 
-#. Browse to `the frontend <https://typo3.org.ddev.local/>`_ or `the backend <https://typo3.org.ddev.local/typo3/>`_
+#. Browse to `the frontend <https://typo3.org.ddev.site/>`_ or `the backend <https://typo3.org.ddev.site/typo3/>`_
 
 
 Download assets
@@ -122,7 +122,7 @@ Troubleshooting
 ---------------
 
 The command `ddev start` fails due to npm processes. What can I do?
-   You need to remove the folder `node_modules` located in `html/typo3conf/ext/t3olayout/Build/` and clear the npm caches on
+   You need to remove the folder `node_modules` located in `private/typo3conf/ext/t3olayout/Build/` and clear the npm caches on
    the machine with `ddev exec npm cache clear --force`. After that, `ddev start` should work again.
 
 I can't login in the frontend with my LDAP user.
