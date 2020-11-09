@@ -85,10 +85,10 @@ Download and install assets
 
 .. rst-class:: bignums
 
-#. Download the `database dump and assets
-   <https://git-t3o.typo3.org/t3o/typo3.org/builds/artifacts/assets/download?job=dump-assets>`__
-   from GitLab. Get this download and copy the folder :file:`fileadmin` into
-   the folder :file:`html`.
+#. Download and extract the ZIP file from GitLab, see `Download assets
+   <https://docs.typo3.org/m/typo3/team-t3oteam/master/en-us/Contribution/LocalEnvironment/Ddev/Index.html#download-assets>`__
+   
+#. Copy the folder :file:`fileadmin` into the folder :file:`html`.
 
 #. Import the :file:`DB.sql` provided with the Artefacts into your local DB
 
