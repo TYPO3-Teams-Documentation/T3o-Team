@@ -21,9 +21,9 @@ All you need is a local running web server. That can be done directly on the
 machine or with help of Virtual Machines like Vagrant, Docker, XAMPP, MAMP, etc.
 
 If you have a local web server running, be sure you have all requirements
-needed for using TYPO3 8 LTS:
+needed for using TYPO3 11.5 LTS
 
-#. >= PHP 7.2
+#. >= PHP 7.4
 
 #. A database (we are using MariaDB)
 
@@ -99,15 +99,13 @@ Work with CSS and JS
 
 .. rst-class:: bignums
 
-#. run `npm install --prefix=private/typo3conf/ext/t3olayout/Build` on terminal/bash/shell
+#. run `npm install --prefix=vendor/t3o/t3olayout/Build/` on terminal/bash/shell
 
-#. run `npm run build --prefix=private/typo3conf/ext/t3olayout/Build`
+#. run `npm run build --prefix=vendor/t3o/t3olayout/Build/`
 
    For all those who don't want to do this or are not able to build these files
    using npm the latest version of these files are also included in the
-   asset-download. Copy the folders :file:`Images`, :file:`JavaScript` and
-   :file:`Css` to :file:`html/typo3conf/ext/t3olayout/Resources/Public`
-   and you will be able to see the frontend as well.
+   asset-download. 
 
 
 Get TYPO3 up and running
