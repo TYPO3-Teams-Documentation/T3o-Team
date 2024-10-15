@@ -1,5 +1,5 @@
 
-.. include:: ../../Includes.txt
+.. include:: ../../Includes.rst.txt
 .. highlight:: shell
 
 .. in general we are using 79 characters at maximum. This is no strict rule.

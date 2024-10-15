@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides xmlns="https://www.phpdoc.org/guides"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+        links-are-relative="true"
+>
+    <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               project-home="https://github.com/TYPO3-Teams-Documentation/T3o-Team"
+               project-contact="mailto:thomas.loeffler@typo3.org"
+               project-repository="https://github.com/TYPO3-Teams-Documentation/T3o-Team"
+               project-issues="https://github.com/TYPO3-Teams-Documentation/T3o-Team/issues"
+               edit-on-github-branch="master"
+               edit-on-github="TYPO3-Teams-Documentation/T3o-Team"
+               typo3-core-preferred="stable"
+               interlink-shortcode="t3org"
+    />
+    <project title="t3o team"
+             release="2.0"
+             version="2.0"
+             copyright="since ever by the authors"/>
+</guides>

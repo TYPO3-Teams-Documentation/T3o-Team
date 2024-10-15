@@ -1,5 +1,7 @@
-.. include:: ../../../Includes.txt
+.. include:: ../../../Includes.rst.txt
 .. highlight:: shell
+
+.. _t3o-team-setup-own-local-environment:
 
 ===========================
 Setup own local environment

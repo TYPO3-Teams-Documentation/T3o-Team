@@ -1,5 +1,7 @@
-.. include:: ../../../Includes.txt
+.. include:: ../../../Includes.rst.txt
 .. highlight:: shell
+
+.. _t3o-team-setup-ddev-environment-docker-based:
 
 =====================================
 Setup ddev environment (docker based)
@@ -106,14 +108,14 @@ As there are no backend users in the dump, you need to setup a local admin accou
 
 #. `../bin/typo3cms database:updateschema` to update the database because the dump included in the assets you downloaded is missing some tables like sys_domain or caching related ones.
 
-#. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt. (You may need to call one of the scripts directly in the given directory, f.e. `php typo3-console.php backend:createadmin
+#. `../bin/typo3cms backend:createadmin` and set your username and password in the prompt. (You may need to call one of the scripts directly in the given directory, f.e. `php typo3-console.php backend:createadmin`
 
 
 Use built-in Solr server
 ------------------------
 
 If you want to use the Solr server (important for TER) you need to use the built-in Solr docker container.
-You can access the Solr admin panel: `<typo3.org.ddev.local:8983>`_
+You can access the Solr admin panel: `<typo3.org.ddev.local:8983>`.
 
 The Solr docker image is running by default and is usable without configuration.
 

@@ -6,10 +6,10 @@
 
 
 .. With the following include we import some definition. We do this in each and every file.
-   so we can change the definition at a single place. Use the relative path to the Includes.txt file,
-   which may look as well like ../../../Includes.txt for a deeply nested source file.
+   so we can change the definition at a single place. Use the relative path to the Includes.rst.txt file,
+   which may look as well like ../../../Includes.rst.txt for a deeply nested source file.
 
-.. include:: Includes.txt
+.. include:: Includes.rst.txt
 
 
 .. Usually we define 'php' as default highlight language in Includes.txt.
@@ -31,21 +31,14 @@ t3o team
 
 
 :Writing here:    t3o team - it's about typo3.org and related pages
-:Buildinfo:       Find information about the documentation build process in `buildinfo <_buildinfo>`_
-:Markup:          Have a look at the `warnings.txt <_buildinfo/warnings.txt>`_ to see if there a
-                  warnings about the reStructuredText syntax.
-:Sitemap:         :ref:`Sitemap`
 :Rendered:        |today|
 
 .. toctree::
    :hidden:
 
-   Sitemap/Index
    Contribution/Index
    Knowledgebase/Index
-   NginxProxy/Index
    PersonalNotes/Index
-   Linktargets/Index
    typo3.org/Index
    extensions.typo3.org/Index
    my.typo3.org/Index

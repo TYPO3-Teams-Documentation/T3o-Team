@@ -1,5 +1,5 @@
 
-.. include:: ../Includes.txt
+.. include:: ../Includes.rst.txt
 .. highlight:: rst
 
 =================
@@ -14,7 +14,6 @@ Main chapters:
    Workflow/Index
    LocalEnvironment/Others/Index
    LocalEnvironment/Ddev/Index
-   LocalEnvironment/DockerAllSites/Index
    FrequentlyAskedQuestions/Index
 
 
