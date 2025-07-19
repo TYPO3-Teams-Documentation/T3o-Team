@@ -30,16 +30,24 @@ t3o team
    Think of it as key-value pairs.
 
 
-:Writing here:    t3o team - it's about typo3.org and related pages
+:Writing here:    T3O Team - TYPO3.org Development Documentation
 :Rendered:        |today|
+
+This documentation covers the development workflow and local environment setup for TYPO3.org projects.
+
+**Main Topics:**
+
+- :doc:`Workflow/Index`: From ticket to merge request to deployment
+- :doc:`LocalEnvironment/Index`: DDEV and manual setup instructions
+- :doc:`Projects/Index`: Overview of all T3O projects and their repositories
+- :doc:`FAQ/Index`: Frequently asked questions and troubleshooting
 
 .. toctree::
    :hidden:
 
-   Contribution/Index
-   Knowledgebase/Index
-   PersonalNotes/Index
-   typo3.org/Index
-   extensions.typo3.org/Index
-   my.typo3.org/Index
+   Workflow/Index
+   LocalEnvironment/Index
+   Projects/Index
+   FAQ/Index
+
 
