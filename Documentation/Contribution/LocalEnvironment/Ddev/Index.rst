@@ -42,9 +42,9 @@ Clone and prepare files
 #. Clone your website repository (in case for typo3.org -
    `find it here <https://gitlab.typo3.org/t3o/typo3.org>`_)
 
-#. Copy the ./auth.json.example to ./auth.json
+#. Copy the ./auth.json.sample to ./auth.json
 
-#. Edit the ./auth.json file and add your gitlab (gitlab.typo3.org) account
+#. Edit the ./auth.json file and add your TYPO3 GitLab (gitlab.typo3.org) account
 
 #. `ddev start`
 
@@ -59,7 +59,7 @@ Download assets
 ---------------
 
 To download the database dump, you need to visit the CI/CD area. For e.g. the typo3.org project,
-it's `here <https://gitlab.typo3.org/t3o/typo3.org/pipelines>`_.
+it's `here <https://git.typo3.org/services/t3o-sites/typo3.org/typo3.org/-/pipelines>`_.
 
 Check for an existing maintenance stage in one of the pipelines:
 
@@ -75,7 +75,6 @@ Then open the stage and click on the play button to create a dump for local envi
 
 Wait for the build to end and click on the result page.
 There you can see the `Download` link in the right column:
-
 
 .. image:: ../../../Images/Maintenance/Download-Dump.jpg
   :alt: Download dump for local environment
