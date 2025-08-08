@@ -35,21 +35,26 @@ The TYPO3 Organization maintains several web projects, each with its own reposit
      - Repository
      - Description
      - Special Requirements
+     - SQL-Dump Project ID
    * - **typo3.org**
      - `typo3.org <https://git.typo3.org/services/t3o-sites/typo3.org/typo3.org>`_
      - Main community hub
      - None
+     - 133
    * - **extensions.typo3.org**
      - `ter <https://git.typo3.org/services/t3o-sites/extensions.typo3.org/ter>`_
      - TYPO3 Extension Repository
      - Solr, Signed NDA
+     - 134
    * - **voting.typo3.org**
      - *URL to be provided*
      - TYPO3 Community Voting
      - None
+     - None
    * - **my.typo3.org**
      - *URL to be provided*
      - User account management
+     - None
      - None
 
 Common Architecture
@@ -80,7 +85,7 @@ Database Synchronization
 Each project provides database dumps via GitLab CI/CD artifacts:
 
 **Available Databases**
-- **typo3.org**: ``https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
+- **typo3.org**: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - **Other projects**: URLs will be provided later
 
 **DDEV Integration**

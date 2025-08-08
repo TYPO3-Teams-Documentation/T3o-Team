@@ -39,7 +39,7 @@ Clone Repository
     # Example for typo3.org
     git clone https://git.typo3.org/services/t3o-sites/typo3.org/typo3.org.git
     cd typo3.org
-    
+
     # Example for extensions.typo3.org
     git clone https://git.typo3.org/services/t3o-sites/extensions.typo3.org/ter.git
     cd ter
@@ -61,8 +61,8 @@ Clone Repository
             "git.typo3.org": {
                 "username": "gitlabusername",
                 "token": "gitlab_personal_access_token",
-                "project-id": "5",
-                "branch": "develop",
+                "project-id": "133",
+                "branch": "main",
                 "job-name": "Get dump for local environment"
             }
         }
