@@ -193,5 +193,5 @@ Getting Help
 ============
 
 - Check the :doc:`../../FAQ/Index` for more solutions
-- Ask in TYPO3 Slack #typo3-org channel
+- Ask in TYPO3 Slack #t3o-team or #t3o-ter-team channel
 - Review DDEV documentation: https://ddev.readthedocs.io/
