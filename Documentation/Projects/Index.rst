@@ -29,7 +29,7 @@ The TYPO3 Organization maintains several web projects, each with its own reposit
 
 .. list-table:: Project Overview
    :header-rows: 1
-   :widths: 25 35 25 15
+   :widths: 20 30 25 15 10
 
    * - Project
      - Repository
