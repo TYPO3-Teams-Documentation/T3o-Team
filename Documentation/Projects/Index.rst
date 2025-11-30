@@ -115,21 +115,11 @@ Filefill Configuration
 
 Each project has specific filefill configuration for asset loading:
 
-**typo3.org Configuration**::
+**typo3.org Configuration**
 
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['filefill']['storages'][1] = [
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://typo3.org/',
-        ],
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://my.typo3.org/',
-        ],
-        [
-            'identifier' => 'placeholder',
-        ],
-    ];
+..  literalinclude:: ../LocalEnvironment/_codesnippets/filefill.php
+    :caption: Filefill configuration for typo3.org
+    :language: php
 
 **Other Projects**: Configurations will be provided later.
 
