@@ -18,6 +18,7 @@ Prerequisites
 =============
 
 **Web Server Requirements**
+
 - PHP 8.1 or higher
 - MariaDB or MySQL database
 - Web server (Apache/Nginx)
@@ -25,9 +26,11 @@ Prerequisites
 - All TYPO3 12.4 LTS requirements
 
 **Optional for TER Project**
+
 - Solr Server 6.6 (for extensions.typo3.org search functionality)
 
 **Access Requirements**
+
 - GitLab account corresponding to your TYPO3.org username
 - For TER project: Signed NDA required due to GDPR compliance
 
@@ -72,6 +75,7 @@ Clone Repository
     }
 
    **Required fields:**
+
    - ``http-basic``: Basic authentication for Git operations
    - ``gitlab-api``: API access for database synchronization and CI/CD artifacts
    - ``project-id``: Project ID for database dumps (5 = typo3.org)
@@ -96,6 +100,7 @@ Database Setup
     mysql -u your-user -p your-database < DB.sql
 
 **Database URLs for Projects:**
+
 - typo3.org: ``https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - Other projects: URLs will be provided later
 
@@ -172,6 +177,7 @@ Add filefill configuration to your ``additional.php``::
 This configuration allows the filefill extension to load assets from production servers when they're not available locally.
 
 **Project-specific configurations:**
+
 - typo3.org: Configuration shown above
 - Other projects: Configurations will be provided later
 
@@ -245,6 +251,7 @@ File Assets
 Thanks to the filefill extension by Nicole Cordes, you don't need to download the complete fileadmin directory. Assets are loaded on-demand from production servers.
 
 **How it works:**
+
 - When a file is requested that doesn't exist locally
 - Filefill checks the configured domains
 - Downloads the file from production

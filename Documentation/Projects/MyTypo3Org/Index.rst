@@ -19,13 +19,15 @@ Repository Information
 
 **Repository URL**: *To be provided*
 
-**Branch Strategy**: 
+**Branch Strategy**:
+
 - Main branch: ``develop``
 - Feature branches: ``feature/issue-number-description``
 
 **Workflow**: Follow the standard :doc:`../../Workflow/Index`
 
 **Access Requirements**
+
 - Standard GitLab access
 - TYPO3.org account required
 
@@ -35,6 +37,7 @@ Project Description
 my.typo3.org serves as the central user management platform providing:
 
 **Core Features**
+
 - User registration for new TYPO3.org users
 - Profile management and editing
 - Basic user data management (name, email, contact information)
@@ -43,6 +46,7 @@ my.typo3.org serves as the central user management platform providing:
 - GitLab account synchronization
 
 **User Data Management**
+
 - First and last name
 - Email address management
 - Contact information
@@ -50,6 +54,7 @@ my.typo3.org serves as the central user management platform providing:
 - Privacy preferences
 
 **Target Audience**
+
 - All TYPO3 community members
 - New users registering for TYPO3.org
 - Existing users managing their profiles
@@ -63,12 +68,14 @@ Technical Details
 **Database**: MariaDB
 
 **Key Extensions**
+
 - ``t3olayout``: Common layout and styling
 - ``filefill``: Asset loading from production
 - Custom user management extensions
 - LDAP integration for authentication
 
 **Special Requirements**
+
 - LDAP connectivity for user authentication
 - Integration with GitLab for account synchronization
 
@@ -109,24 +116,28 @@ Development Guidelines
 ======================
 
 **User Management Development**
+
 - Secure user data handling
 - GDPR compliance for personal data
 - User authentication and authorization
 - Account verification processes
 
 **Frontend Development**
+
 - Build assets: ``ddev build-frontend`` (DDEV)
 - User-friendly profile interfaces
 - Responsive design for all devices
 - Accessibility compliance
 
 **Backend Development**
+
 - User administration interfaces
 - Data export and import functionality
 - Account synchronization systems
 - User activity logging
 
 **Security Considerations**
+
 - Personal data protection
 - Secure authentication mechanisms
 - Data encryption for sensitive information
@@ -136,18 +147,21 @@ Common Development Tasks
 ========================
 
 **User Profile Management**
+
 - Profile creation and editing forms
 - Data validation and sanitization
 - Image upload and management
 - Privacy settings configuration
 
 **Account Administration**
+
 - User account creation and verification
 - Bulk user management operations
 - Account status management
 - User data export/import
 
 **Integration Development**
+
 - GitLab account synchronization
 - LDAP authentication integration
 - Third-party service connections
@@ -157,24 +171,28 @@ Special Considerations
 ======================
 
 **Data Protection (GDPR)**
+
 - Personal data handling compliance
 - User consent management
 - Data retention policies
 - Right to be forgotten implementation
 
 **Security & Privacy**
+
 - Secure password handling
 - Two-factor authentication support
 - Account lockout mechanisms
 - Privacy-by-design principles
 
 **Performance**
+
 - Efficient user data queries
 - Caching for user profiles
 - Optimized authentication processes
 - Database indexing for user searches
 
 **Integration Requirements**
+
 - LDAP server connectivity
 - GitLab API integration
 - Email service integration
@@ -184,12 +202,14 @@ Known Issues & Solutions
 ========================
 
 **Common Problems**
+
 - LDAP connection issues → Check LDAP server configuration
 - GitLab sync failures → Verify API credentials and permissions
 - Email delivery problems → Check email service configuration
 - Authentication loops → Clear cookies and check session handling
 
 **Development Specific**
+
 - User data privacy → Implement proper data handling procedures
 - Database synchronization → Follow user data protection guidelines
 - Local LDAP testing → Use development LDAP server or mock services
@@ -198,16 +218,19 @@ Getting Help
 ============
 
 **Project Support**
+
 - Repository issues: Use project issue tracker (when available)
 - User management questions: TYPO3 Slack #typo3-org
 - LDAP/Authentication: Contact system administrators
 
 **Technical Resources**
+
 - TYPO3 documentation: https://docs.typo3.org/
 - GDPR compliance: https://gdpr.eu/
 - LDAP integration: TYPO3 LDAP extension documentation
 
 **Contacts**
+
 - Project maintainers: To be identified
 - System administrators: For LDAP and infrastructure questions
 
@@ -219,12 +242,14 @@ Development Status
    filefill configuration will be provided once available.
 
 **What's Available**
+
 - Project concept and requirements
 - Technical specifications
 - Development guidelines
 - Integration requirements
 
 **Coming Soon**
+
 - Repository access
 - Database dumps
 - LDAP configuration details
@@ -234,6 +259,7 @@ Community Features
 ==================
 
 **Planned Features**
+
 - Community member directory
 - Group and team management
 - Event participation tracking
@@ -241,6 +267,7 @@ Community Features
 - Community badges and achievements
 
 **Integration Points**
+
 - TYPO3.org main site integration
 - Extension repository user linking
 - Voting platform authentication

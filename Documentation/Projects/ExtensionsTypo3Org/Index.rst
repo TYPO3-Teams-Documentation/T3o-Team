@@ -19,7 +19,8 @@ Repository Information
 
 **Repository URL**: https://git.typo3.org/services/t3o-sites/extensions.typo3.org/ter
 
-**Branch Strategy**: 
+**Branch Strategy**:
+
 - Main branch: ``develop``
 - Feature branches: ``feature/issue-number-description``
 
@@ -36,6 +37,7 @@ Project Description
 The TYPO3 Extension Repository provides:
 
 **Core Features**
+
 - Extension registration and management
 - Extension key management (register, transfer, remove)
 - Extension uploads and version management
@@ -45,6 +47,7 @@ The TYPO3 Extension Repository provides:
 - Download statistics and analytics
 
 **Target Audience**
+
 - Extension developers
 - TYPO3 integrators searching for extensions
 - Community members exploring available extensions
@@ -58,6 +61,7 @@ Technical Details
 **Database**: MariaDB
 
 **Key Extensions**
+
 - ``t3olayout``: Common layout and styling
 - ``filefill``: Asset loading from production
 - ``solr``: Search functionality (**required**)
@@ -103,11 +107,13 @@ Local Development Setup
 Follow the :doc:`../../LocalEnvironment/Manual/Index` guide with these additional requirements:
 
 **Solr Server Setup**
+
 - Install Apache Solr 6.6 locally
 - Configure Solr cores for extension indexing
 - Set up Solr connection in TYPO3 backend
 
 **Database and Configuration**
+
 - Database dump: URL will be provided later
 - Filefill configuration: Will be provided later
 
@@ -115,18 +121,22 @@ Solr Configuration
 ==================
 
 **DDEV Environment**
+
 - Solr runs automatically in Docker container
 - Pre-configured for development use
 - Access admin interface at port 8983
 
 **Manual Environment**
+
 - Install Solr 6.6 manually
 - Configure cores for:
+
   - Extension metadata indexing
   - Extension documentation indexing
   - Extension code search (if applicable)
 
 **Solr Features**
+
 - Full-text search in extensions
 - Faceted search by categories, TYPO3 version, etc.
 - Search suggestions and autocomplete
@@ -136,23 +146,27 @@ Development Guidelines
 ======================
 
 **Extension Data Management**
+
 - Extensions are imported from external sources
 - Local changes may be overwritten during imports
 - Focus on frontend/backend functionality rather than data
 
 **Frontend Development**
+
 - Build assets: ``ddev build-frontend`` (DDEV)
 - Special attention to search interface
 - Responsive design for mobile browsing
 - Performance optimization for large datasets
 
 **Search Functionality**
+
 - Test search with various queries
 - Verify faceted search filters
 - Check search result relevance
 - Test autocomplete functionality
 
 **Backend Development**
+
 - Extension management interfaces
 - User management for extension developers
 - Analytics and reporting features
@@ -162,17 +176,20 @@ Common Development Tasks
 ========================
 
 **Working with Extensions**
+
 - Extension data is imported, not manually created
 - Focus on display and search functionality
 - Test with various extension types and sizes
 
 **Search Development**
+
 - Modify search templates and logic
 - Update Solr configuration if needed
 - Test search performance with large datasets
 - Implement new search features
 
 **User Management**
+
 - Extension developer accounts
 - Permission management
 - User registration and verification
@@ -181,24 +198,28 @@ Special Considerations
 ======================
 
 **Data Protection (GDPR)**
+
 - User data handling requires special care
 - Privacy policy compliance
 - Data retention policies
 - User consent management
 
 **Performance**
+
 - Large dataset handling
 - Search performance optimization
 - Caching strategies for extension data
 - Database query optimization
 
 **Security**
+
 - User authentication and authorization
 - Extension upload security
 - Input validation and sanitization
 - Rate limiting for API endpoints
 
 **Import Processes**
+
 - Extension data imports from external sources
 - Automated synchronization processes
 - Data validation and cleanup
@@ -208,12 +229,14 @@ Known Issues & Solutions
 ========================
 
 **Common Problems**
+
 - Solr connection issues → Check Solr server status and configuration
 - Search not working → Verify Solr indexing and core configuration
 - Import failures → Check data sources and import scripts
 - Performance issues → Optimize database queries and caching
 
 **Development Specific**
+
 - Large dataset handling → Use pagination and lazy loading
 - Search relevance → Tune Solr configuration and boost factors
 - Memory issues → Increase PHP memory limit for large operations
@@ -222,15 +245,18 @@ Getting Help
 ============
 
 **⚠️ Access Issues**
+
 - Contact project maintainers for NDA process
 - Ensure your GitLab account matches TYPO3.org username
 
 **Technical Support**
+
 - Project-specific issues: Repository issue tracker
 - Solr questions: TYPO3 Slack #typo3-solr
 - General questions: TYPO3 Slack #typo3-org
 
 **Resources**
+
 - TYPO3 Solr documentation: https://docs.typo3.org/c/typo3/cms-solr/
 - Apache Solr documentation: https://solr.apache.org/guide/
 - Extension development: https://docs.typo3.org/m/typo3/reference-coreapi/
