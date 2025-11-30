@@ -27,6 +27,7 @@ Repository Information
 **Workflow**: Follow the standard :doc:`../../Workflow/Index`
 
 **⚠️ Special Access Requirements**
+
 - **Signed NDA required** due to GDPR compliance (user data protection)
 - Standard GitLab access not sufficient
 - Contact project maintainers for NDA process
