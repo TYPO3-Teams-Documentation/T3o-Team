@@ -22,7 +22,7 @@ This section provides an overview of all TYPO3.org projects, their repositories,
    VotingTypo3Org/Index
    MyTypo3Org/Index
 
-Project Overview
+Project overview
 ================
 
 The TYPO3 Organization maintains several web projects, each with its own repository and specific requirements:
@@ -57,7 +57,7 @@ The TYPO3 Organization maintains several web projects, each with its own reposit
      - None
      - None
 
-Common Architecture
+Common architecture
 ===================
 
 All projects share similar architecture:
@@ -82,7 +82,7 @@ All projects share similar architecture:
 - Merge requests for code review
 - CI/CD pipelines for testing and deployment
 
-Database Synchronization
+Database synchronization
 ========================
 
 Each project provides database dumps via GitLab CI/CD artifacts:
@@ -95,7 +95,7 @@ Each project provides database dumps via GitLab CI/CD artifacts:
 **DDEV Integration**
 All projects support the ``ddev sync-database`` command for automated database synchronization.
 
-Access Requirements
+Access requirements
 ===================
 
 **Standard Access**
@@ -110,7 +110,7 @@ Access Requirements
 
 If you can't access GitLab, log in to https://typo3.org/ once to sync your account with LDAP.
 
-Filefill Configuration
+Filefill configuration
 ======================
 
 Each project has specific filefill configuration for asset loading:
@@ -123,7 +123,7 @@ Each project has specific filefill configuration for asset loading:
 
 **Other Projects**: Configurations will be provided later.
 
-Branch Strategy
+Branch strategy
 ===============
 
 **Website Projects**
@@ -137,7 +137,7 @@ Branch Strategy
 - Main branch: ``master``
 - Feature branches: ``feature/issue-number-description``
 
-Getting Started
+Getting started
 ===============
 
 **For New Contributors**
@@ -158,7 +158,7 @@ Getting Started
 #. Review merge requests that need testing
 #. Follow the established :doc:`../Workflow/Index`
 
-Next Steps
+Next steps
 ==========
 
 - **Project Details**: Click on individual projects above for specific information

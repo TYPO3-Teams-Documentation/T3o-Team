@@ -38,7 +38,7 @@ To solve this, log in to https://typo3.org/ once.
    Only users with **Maintainer** status can merge into ``develop`` and ``main`` branches.
    All other contributors must create merge requests for review.
 
-General Workflow
+General workflow
 ================
 
 .. rst-class:: bignums
@@ -86,7 +86,7 @@ Issue Workflow (Contributors)
    - Remove "Draft:" when ready for maintainer review
    - Add clear description of changes and testing done
 
-Coding Standards
+Coding standards
 ================
 
 Follow TYPO3 Core coding standards:
@@ -122,7 +122,7 @@ Merge Request Workflow (Maintainers)
 
 **Note for Contributors**: You cannot merge your own requests. A maintainer must review and merge all contributions.
 
-Deployment Process
+Deployment process
 ==================
 
 After successful merge to the main branch:
@@ -157,7 +157,7 @@ Branch Strategy & Permissions
 .. warning::
    Direct pushes to ``develop`` and ``main`` are restricted to maintainers only.
 
-Getting Help
+Getting help
 ============
 
 If you encounter problems:
