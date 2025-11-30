@@ -4,7 +4,7 @@
 .. _local-environment:
 
 =================
-Local Environment
+Local environment
 =================
 
 .. contents:: On this page:
@@ -14,7 +14,7 @@ Local Environment
 
 This section covers setting up a local development environment for TYPO3.org projects.
 
-Setup Options
+Setup options
 =============
 
 Choose your preferred setup method:
@@ -59,11 +59,11 @@ Both setup methods provide complete local development environments for TYPO3.org
 **Frontend Asset Building**
   CSS and JavaScript compilation for development:
   
-  - Node.js 14 required for asset compilation
+  - Node.js 18 LTS required for asset compilation
   - Source files located in ``vendor/t3o/t3olayout/Build/``
   - Automated building (DDEV) or manual npm commands (Manual setup)
 
-Next Steps
+Next steps
 ==========
 
 - **New to DDEV?** → :doc:`Ddev/Index`

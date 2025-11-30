@@ -18,25 +18,27 @@ Prerequisites
 =============
 
 **GitLab Account**
-Before you can contribute, you need a GitLab account that corresponds to your TYPO3.org username. 
+Before you can contribute, you need a GitLab account that corresponds to your TYPO3.org username.
 You can manage your TYPO3.org account at `my.typo3.org <https://my.typo3.org/>`_.
 
 **Access Requirements**
+
 - For most projects: TYPO3.org account with GitLab access
 - For **extensions.typo3.org (TER)**: Additional signed NDA required due to GDPR (user data protection)
 
-If you don't have access to GitLab, the reason might be that your username is not present in the LDAP environment. 
+If you don't have access to GitLab, the reason might be that your username is not present in the LDAP environment.
 To solve this, log in to https://typo3.org/ once.
 
 **User Roles & Permissions**
+
 - **Contributors**: Can create feature branches, push commits, and create merge requests
 - **Maintainers**: Can merge into ``develop`` and ``main`` branches, review and approve merge requests
 
 .. important::
-   Only users with **Maintainer** status can merge into ``develop`` and ``main`` branches. 
+   Only users with **Maintainer** status can merge into ``develop`` and ``main`` branches.
    All other contributors must create merge requests for review.
 
-General Workflow
+General workflow
 ================
 
 .. rst-class:: bignums
@@ -77,14 +79,14 @@ Issue Workflow (Contributors)
    - Test your changes thoroughly
    - Ensure your branch stays up-to-date with ``develop``
 
-#. **Create Merge Request**: 
-   
+#. **Create Merge Request**:
+
    - Target: ``develop`` branch (never directly to ``main``)
    - Mark as "Draft" while work is in progress
    - Remove "Draft:" when ready for maintainer review
    - Add clear description of changes and testing done
 
-Coding Standards
+Coding standards
 ================
 
 Follow TYPO3 Core coding standards:
@@ -109,7 +111,7 @@ Merge Request Workflow (Maintainers)
 #. **Local Testing**: Test the code locally on your development environment
 
 #. **Approval Process**:
-   
+
    - If everything is okay: Approve and merge into ``develop``
    - If improvements are needed: Request changes and assign back to author
    - Ensure all tests pass and code quality standards are met
@@ -120,7 +122,7 @@ Merge Request Workflow (Maintainers)
 
 **Note for Contributors**: You cannot merge your own requests. A maintainer must review and merge all contributions.
 
-Deployment Process
+Deployment process
 ==================
 
 After successful merge to the main branch:
@@ -133,15 +135,18 @@ Branch Strategy & Permissions
 =============================
 
 **Protected Branches**
-- **``main``**: Production branch - **Maintainers only**
-- **``develop``**: Development branch - **Maintainers only**
-- **``master``**: For extensions - **Maintainers only** (legacy naming)
+
+- ``main``: Production branch - Maintainers only
+- ``develop``: Development branch - Maintainers only
+- ``master``: For extensions - Maintainers only (legacy naming)
 
 **Contributor Branches**
+
 - **Feature branches**: ``feature/issue-number-description`` - Contributors can create and push
 - **Hotfix branches**: ``hotfix/description`` - For critical fixes
 
 **Merge Flow**
+
 .. rst-class:: bignums
 
 #. Contributors create feature branches from ``develop``
@@ -152,11 +157,11 @@ Branch Strategy & Permissions
 .. warning::
    Direct pushes to ``develop`` and ``main`` are restricted to maintainers only.
 
-Getting Help
+Getting help
 ============
 
 If you encounter problems:
 
 - Check the :doc:`../FAQ/Index` for common issues
-- Ask in the TYPO3 Slack #typo3-org channel
+- Ask in the TYPO3 Slack #t3o-team or #t3o-ter-team channel
 - Contact project maintainers directly

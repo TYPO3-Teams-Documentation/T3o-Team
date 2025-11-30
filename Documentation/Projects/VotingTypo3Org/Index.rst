@@ -19,13 +19,15 @@ Repository Information
 
 **Repository URL**: *To be provided*
 
-**Branch Strategy**: 
+**Branch Strategy**:
+
 - Main branch: ``develop``
 - Feature branches: ``feature/issue-number-description``
 
 **Workflow**: Follow the standard :doc:`../../Workflow/Index`
 
 **Access Requirements**
+
 - Standard GitLab access
 - TYPO3.org account required
 
@@ -35,6 +37,7 @@ Project Description
 The TYPO3 Community Voting Platform provides:
 
 **Core Features**
+
 - Community voting on important decisions
 - Ballot creation and management
 - Voting process administration
@@ -43,6 +46,7 @@ The TYPO3 Community Voting Platform provides:
 - Voting history and archives
 
 **Target Audience**
+
 - TYPO3 community members
 - TYPO3 Association members
 - Community decision makers
@@ -56,11 +60,13 @@ Technical Details
 **Database**: MariaDB
 
 **Key Extensions**
+
 - ``t3olayout``: Common layout and styling
 - ``filefill``: Asset loading from production
 - Custom voting extensions for ballot management
 
 **Special Requirements**
+
 - None beyond standard TYPO3 setup
 
 Local Development Setup
@@ -100,24 +106,28 @@ Development Guidelines
 ======================
 
 **Voting System Development**
+
 - Secure voting mechanisms
 - Anonymous voting options
 - Audit trail maintenance
 - Result calculation accuracy
 
 **Frontend Development**
+
 - Build assets: ``ddev build-frontend`` (DDEV)
 - User-friendly voting interfaces
 - Clear result visualization
 - Mobile-responsive design
 
 **Backend Development**
+
 - Ballot creation and management
 - User verification systems
 - Vote counting and validation
 - Administrative interfaces
 
 **Security Considerations**
+
 - Vote integrity protection
 - User authentication security
 - Prevention of multiple voting
@@ -127,18 +137,21 @@ Common Development Tasks
 ========================
 
 **Ballot Management**
+
 - Create new voting ballots
 - Configure voting options
 - Set voting periods and deadlines
 - Manage voter eligibility
 
 **Voting Process**
+
 - User registration and verification
 - Voting interface development
 - Progress tracking and notifications
 - Result calculation and display
 
 **Administration**
+
 - User management and permissions
 - Voting statistics and analytics
 - Archive management
@@ -148,24 +161,28 @@ Special Considerations
 ======================
 
 **Security & Integrity**
+
 - Vote anonymity protection
 - Secure ballot storage
 - Audit trail maintenance
 - Protection against manipulation
 
 **User Experience**
+
 - Clear voting instructions
 - Intuitive interface design
 - Accessibility compliance
 - Mobile device support
 
 **Performance**
+
 - Handle high concurrent voting loads
 - Efficient result calculations
 - Optimized database queries
 - Caching for result displays
 
 **Compliance**
+
 - Data protection regulations
 - Voting process transparency
 - Record retention policies
@@ -175,12 +192,14 @@ Known Issues & Solutions
 ========================
 
 **Common Problems**
+
 - Authentication issues → Check TYPO3.org account integration
 - Voting period errors → Verify timezone configurations
 - Result calculation errors → Check vote counting algorithms
 - Performance during high load → Optimize database and caching
 
 **Development Specific**
+
 - Testing voting scenarios → Use development/staging data
 - Database synchronization → Follow standard sync procedures
 - Asset loading → Verify filefill configuration
@@ -189,16 +208,19 @@ Getting Help
 ============
 
 **Project Support**
+
 - Repository issues: Use project issue tracker (when available)
-- General questions: TYPO3 Slack #typo3-org
+- General questions: TYPO3 Slack #t3o-team
 - Development support: Contact project maintainers
 
 **Technical Resources**
+
 - TYPO3 documentation: https://docs.typo3.org/
 - Security best practices: TYPO3 security guidelines
 - Voting system design: Community governance documentation
 
 **Contacts**
+
 - Project maintainers: To be identified
 - TYPO3 Association: For voting process questions
 
@@ -210,11 +232,13 @@ Development Status
    filefill configuration will be provided once available.
 
 **What's Available**
+
 - Project concept and requirements
 - Technical specifications
 - Development guidelines
 
 **Coming Soon**
+
 - Repository access
 - Database dumps
 - Detailed configuration

@@ -18,16 +18,19 @@ Prerequisites
 =============
 
 **Web Server Requirements**
+
 - PHP 8.1 or higher
 - MariaDB or MySQL database
 - Web server (Apache/Nginx)
-- Node.js 14 (for frontend asset building)
+- Node.js 18 LTS or higher (for frontend asset building)
 - All TYPO3 12.4 LTS requirements
 
 **Optional for TER Project**
+
 - Solr Server 6.6 (for extensions.typo3.org search functionality)
 
 **Access Requirements**
+
 - GitLab account corresponding to your TYPO3.org username
 - For TER project: Signed NDA required due to GDPR compliance
 
@@ -51,30 +54,17 @@ Clone Repository
 
     cp auth.json.example auth.json
 
-#. Edit ``auth.json`` and add your GitLab credentials::
+#. Edit ``auth.json`` and add your GitLab credentials:
 
-    {
-        "http-basic": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "password": "gitlabpassword"
-            }
-        },
-        "gitlab-api": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "token": "gitlab_personal_access_token",
-                "project-id": "5",
-                "branch": "develop",
-                "job-name": "Get dump for local environment"
-            }
-        }
-    }
+   ..  literalinclude:: ../_codesnippets/auth.json
+       :caption: auth.json
+       :language: json
 
    **Required fields:**
+
    - ``http-basic``: Basic authentication for Git operations
    - ``gitlab-api``: API access for database synchronization and CI/CD artifacts
-   - ``project-id``: Project ID for database dumps (5 = typo3.org)
+   - ``project-id``: Project ID for database dumps (133 = typo3.org, 134 = extensions.typo3.org)
 
 Database Setup
 --------------
@@ -87,7 +77,7 @@ Database Setup
 
     # For typo3.org
     curl -H "PRIVATE-TOKEN: your-gitlab-token" \
-         "https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment" \
+         "https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment" \
          -o database.zip
 
 #. Extract and import the database::
@@ -96,7 +86,8 @@ Database Setup
     mysql -u your-user -p your-database < DB.sql
 
 **Database URLs for Projects:**
-- typo3.org: ``https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
+
+- typo3.org: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - Other projects: URLs will be provided later
 
 TYPO3 Configuration
@@ -105,73 +96,26 @@ TYPO3 Configuration
 Additional Configuration
 ------------------------
 
-Create ``config/system/additional.php``::
+Create ``config/system/additional.php``:
 
-    <?php
-    
-    $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
-        $GLOBALS['TYPO3_CONF_VARS'],
-        [
-            'BE' => [
-                'loginRateLimit' => 0,
-                'passwordPolicy' => '',
-            ],
-            'DB' => [
-                'Connections' => [
-                    'Default' => [
-                        'dbname' => 'your_database_name',
-                        'driver' => 'mysqli',
-                        'host' => 'localhost',
-                        'password' => 'your_password',
-                        'port' => '3306',
-                        'user' => 'your_username',
-                    ],
-                ],
-            ],
-            'FE' => [
-                'loginRateLimit' => 0,
-            ],
-            'GFX' => [
-                'processor' => 'ImageMagick',
-                'processor_path' => '/usr/bin/',
-                'processor_path_lzw' => '/usr/bin/',
-            ],
-            'MAIL' => [
-                'transport' => 'sendmail',
-                'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
-            ],
-            'SYS' => [
-                'trustedHostsPattern' => '.*',
-                'devIPmask' => '*',
-                'displayErrors' => 1,
-            ],
-        ]
-    );
+..  literalinclude:: ../_codesnippets/additional.php
+    :caption: config/system/additional.php
+    :language: php
 
 
 Filefill Configuration
 ======================
 
-Add filefill configuration to your ``additional.php``::
+Add filefill configuration to your ``additional.php``:
 
-    // Filefill configuration for typo3.org
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['filefill']['storages'][1] = [
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://typo3.org/',
-        ],
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://my.typo3.org/',
-        ],
-        [
-            'identifier' => 'placeholder',
-        ],
-    ];
+..  literalinclude:: ../_codesnippets/filefill.php
+    :caption: Filefill configuration (add to additional.php)
+    :language: php
 
 This configuration allows the filefill extension to load assets from production servers when they're not available locally.
 
 **Project-specific configurations:**
+
 - typo3.org: Configuration shown above
 - Other projects: Configurations will be provided later
 
@@ -192,7 +136,7 @@ CSS and JavaScript Setup
 
 .. rst-class:: bignums
 
-#. Verify Node.js version (must be Node.js 14)::
+#. Verify Node.js version (must be Node.js 18 LTS or higher)::
 
     node --version
 
@@ -245,6 +189,7 @@ File Assets
 Thanks to the filefill extension by Nicole Cordes, you don't need to download the complete fileadmin directory. Assets are loaded on-demand from production servers.
 
 **How it works:**
+
 - When a file is requested that doesn't exist locally
 - Filefill checks the configured domains
 - Downloads the file from production
@@ -294,5 +239,5 @@ Getting Help
 ============
 
 - Check the :doc:`../../FAQ/Index` for more solutions
-- Ask in TYPO3 Slack #typo3-org channel
+- Ask in TYPO3 Slack #t3o-team or #t3o-ter-team channel
 - Review TYPO3 documentation: https://docs.typo3.org/

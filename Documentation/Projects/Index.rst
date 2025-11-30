@@ -22,14 +22,14 @@ This section provides an overview of all TYPO3.org projects, their repositories,
    VotingTypo3Org/Index
    MyTypo3Org/Index
 
-Project Overview
+Project overview
 ================
 
 The TYPO3 Organization maintains several web projects, each with its own repository and specific requirements:
 
 .. list-table:: Project Overview
    :header-rows: 1
-   :widths: 25 35 25 15
+   :widths: 20 30 25 15 10
 
    * - Project
      - Repository
@@ -57,89 +57,87 @@ The TYPO3 Organization maintains several web projects, each with its own reposit
      - None
      - None
 
-Common Architecture
+Common architecture
 ===================
 
 All projects share similar architecture:
 
 **Technology Stack**
+
 - TYPO3 CMS 12.4 LTS
 - PHP 8.1+
 - MariaDB/MySQL database
 - Composer for dependency management
 
 **Extensions**
+
 - ``t3olayout``: Common layout extension for all projects
 - ``filefill``: Asset loading from production (by Nicole Cordes)
 - Project-specific extensions as needed
 
 **Development Workflow**
+
 - GitLab-based development
 - Feature branches from ``develop`` branch
 - Merge requests for code review
 - CI/CD pipelines for testing and deployment
 
-Database Synchronization
+Database synchronization
 ========================
 
 Each project provides database dumps via GitLab CI/CD artifacts:
 
 **Available Databases**
+
 - **typo3.org**: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - **Other projects**: URLs will be provided later
 
 **DDEV Integration**
 All projects support the ``ddev sync-database`` command for automated database synchronization.
 
-Access Requirements
+Access requirements
 ===================
 
 **Standard Access**
+
 - TYPO3.org account
 - GitLab access (username must match TYPO3.org username)
 - Account management via `my.typo3.org <https://my.typo3.org/>`_
 
 **Special Access Requirements**
+
 - **extensions.typo3.org**: Signed NDA required due to GDPR compliance (user data protection)
 
 If you can't access GitLab, log in to https://typo3.org/ once to sync your account with LDAP.
 
-Filefill Configuration
+Filefill configuration
 ======================
 
 Each project has specific filefill configuration for asset loading:
 
-**typo3.org Configuration**::
+**typo3.org Configuration**
 
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['filefill']['storages'][1] = [
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://typo3.org/',
-        ],
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://my.typo3.org/',
-        ],
-        [
-            'identifier' => 'placeholder',
-        ],
-    ];
+..  literalinclude:: ../LocalEnvironment/_codesnippets/filefill.php
+    :caption: Filefill configuration for typo3.org
+    :language: php
 
 **Other Projects**: Configurations will be provided later.
 
-Branch Strategy
+Branch strategy
 ===============
 
 **Website Projects**
+
 - Main branch: ``develop``
 - Feature branches: ``feature/issue-number-description``
 - Hotfix branches: ``hotfix/description``
 
 **Extensions**
+
 - Main branch: ``master``
 - Feature branches: ``feature/issue-number-description``
 
-Getting Started
+Getting started
 ===============
 
 **For New Contributors**
@@ -160,7 +158,7 @@ Getting Started
 #. Review merge requests that need testing
 #. Follow the established :doc:`../Workflow/Index`
 
-Next Steps
+Next steps
 ==========
 
 - **Project Details**: Click on individual projects above for specific information

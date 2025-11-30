@@ -18,11 +18,13 @@ Prerequisites
 =============
 
 **Required Software**
-- Docker: `Download Docker <https://www.docker.com/community-edition#/download>`_
+
+- Docker: `Download Docker Desktop <https://www.docker.com/products/docker-desktop/>`_
 - DDEV: `Installation Guide <https://ddev.readthedocs.io/en/latest/#installation>`_
-- Node.js 14: Required for frontend asset building (automatically available in DDEV)
+- Node.js 18 LTS: Required for frontend asset building (automatically available in DDEV)
 
 **Access Requirements**
+
 - GitLab account corresponding to your TYPO3.org username
 - For TER project: Signed NDA required due to GDPR compliance
 
@@ -48,27 +50,14 @@ Clone Repository
 
     cp auth.json.example auth.json
 
-#. Edit ``auth.json`` and add your GitLab credentials::
+#. Edit ``auth.json`` and add your GitLab credentials:
 
-    {
-        "http-basic": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "password": "gitlabpassword"
-            }
-        },
-        "gitlab-api": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "token": "gitlab_personal_access_token",
-                "project-id": "133",
-                "branch": "main",
-                "job-name": "Get dump for local environment"
-            }
-        }
-    }
+   ..  literalinclude:: ../_codesnippets/auth.json
+       :caption: auth.json
+       :language: json
 
    **Required fields:**
+
    - ``http-basic``: Basic authentication for Git operations
    - ``gitlab-api``: API access for database synchronization
    - ``project-id``: Project ID for database dumps (varies by project)
@@ -131,14 +120,14 @@ Frontend Development
 CSS and JavaScript Assets
 --------------------------
 
-To work on frontend assets (uses Node.js 14 automatically)::
+To work on frontend assets (uses Node.js 18 automatically)::
 
     ddev build-frontend
 
 This command compiles all CSS and JavaScript files needed for the frontend.
 
 **Node.js Version in DDEV**
-DDEV containers include Node.js 14 by default. You can verify this::
+DDEV containers include Node.js 18 by default. You can verify this::
 
     ddev exec node --version
 
@@ -156,11 +145,13 @@ Solr Integration
 For projects requiring Solr search (like extensions.typo3.org):
 
 **Built-in Solr Server**
+
 - Solr runs automatically in a Docker container
 - Access Solr Admin: https://[your-project].ddev.site:8983
 - No additional configuration needed
 
 **Usage**
+
 - The Solr server is pre-configured and ready to use
 - Indexes are automatically created during database import
 
