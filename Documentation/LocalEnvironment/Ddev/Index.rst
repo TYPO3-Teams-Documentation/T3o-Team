@@ -50,25 +50,11 @@ Clone Repository
 
     cp auth.json.example auth.json
 
-#. Edit ``auth.json`` and add your GitLab credentials::
+#. Edit ``auth.json`` and add your GitLab credentials:
 
-    {
-        "http-basic": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "password": "gitlabpassword"
-            }
-        },
-        "gitlab-api": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "token": "gitlab_personal_access_token",
-                "project-id": "133",
-                "branch": "main",
-                "job-name": "Get dump for local environment"
-            }
-        }
-    }
+   ..  literalinclude:: ../_codesnippets/auth.json
+       :caption: auth.json
+       :language: json
 
    **Required fields:**
 

@@ -110,69 +110,21 @@ TYPO3 Configuration
 Additional Configuration
 ------------------------
 
-Create ``config/system/additional.php``::
+Create ``config/system/additional.php``:
 
-    <?php
-    
-    $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
-        $GLOBALS['TYPO3_CONF_VARS'],
-        [
-            'BE' => [
-                'loginRateLimit' => 0,
-                'passwordPolicy' => '',
-            ],
-            'DB' => [
-                'Connections' => [
-                    'Default' => [
-                        'dbname' => 'your_database_name',
-                        'driver' => 'mysqli',
-                        'host' => 'localhost',
-                        'password' => 'your_password',
-                        'port' => '3306',
-                        'user' => 'your_username',
-                    ],
-                ],
-            ],
-            'FE' => [
-                'loginRateLimit' => 0,
-            ],
-            'GFX' => [
-                'processor' => 'ImageMagick',
-                'processor_path' => '/usr/bin/',
-                'processor_path_lzw' => '/usr/bin/',
-            ],
-            'MAIL' => [
-                'transport' => 'sendmail',
-                'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
-            ],
-            'SYS' => [
-                'trustedHostsPattern' => '.*',
-                'devIPmask' => '*',
-                'displayErrors' => 1,
-            ],
-        ]
-    );
+..  literalinclude:: ../_codesnippets/additional.php
+    :caption: config/system/additional.php
+    :language: php
 
 
 Filefill Configuration
 ======================
 
-Add filefill configuration to your ``additional.php``::
+Add filefill configuration to your ``additional.php``:
 
-    // Filefill configuration for typo3.org
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['filefill']['storages'][1] = [
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://typo3.org/',
-        ],
-        [
-            'identifier' => 'domain',
-            'configuration' => 'https://my.typo3.org/',
-        ],
-        [
-            'identifier' => 'placeholder',
-        ],
-    ];
+..  literalinclude:: ../_codesnippets/filefill.php
+    :caption: Filefill configuration (add to additional.php)
+    :language: php
 
 This configuration allows the filefill extension to load assets from production servers when they're not available locally.
 
