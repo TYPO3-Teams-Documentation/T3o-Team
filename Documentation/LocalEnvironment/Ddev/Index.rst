@@ -19,9 +19,9 @@ Prerequisites
 
 **Required Software**
 
-- Docker: `Download Docker <https://www.docker.com/community-edition#/download>`_
+- Docker: `Download Docker Desktop <https://www.docker.com/products/docker-desktop/>`_
 - DDEV: `Installation Guide <https://ddev.readthedocs.io/en/latest/#installation>`_
-- Node.js 14: Required for frontend asset building (automatically available in DDEV)
+- Node.js 18 LTS: Required for frontend asset building (automatically available in DDEV)
 
 **Access Requirements**
 
@@ -120,14 +120,14 @@ Frontend Development
 CSS and JavaScript Assets
 --------------------------
 
-To work on frontend assets (uses Node.js 14 automatically)::
+To work on frontend assets (uses Node.js 18 automatically)::
 
     ddev build-frontend
 
 This command compiles all CSS and JavaScript files needed for the frontend.
 
 **Node.js Version in DDEV**
-DDEV containers include Node.js 14 by default. You can verify this::
+DDEV containers include Node.js 18 by default. You can verify this::
 
     ddev exec node --version
 
@@ -184,5 +184,5 @@ Getting Help
 ============
 
 - Check the :doc:`../../FAQ/Index` for more solutions
-- Ask in TYPO3 Slack #t3o-team or #t3o-ter-team channel
+- Ask in TYPO3 Slack #typo3-org channel
 - Review DDEV documentation: https://ddev.readthedocs.io/

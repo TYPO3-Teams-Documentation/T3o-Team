@@ -106,7 +106,7 @@ Database & Content
 
 A: Database dumps are available via GitLab CI/CD artifacts:
 
-- **typo3.org**: ``https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
+- **typo3.org**: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - **Other projects**: URLs will be provided later
 
 **Q: Why are images not loading?**
@@ -156,17 +156,17 @@ A: Enable debug mode in your ``additional.php``::
 
 A: Try these steps:
 
-1. Check Node.js version: ``ddev exec node --version`` (should be 14.x) or ``node --version`` for manual setup
+1. Check Node.js version: ``ddev exec node --version`` (should be 18.x or higher) or ``node --version`` for manual setup
 2. Clear npm cache: ``ddev exec npm cache clear --force``
 3. Remove node_modules: ``rm -rf vendor/t3o/t3olayout/Build/node_modules``
 4. Rebuild: ``ddev build-frontend``
 
 **Q: Wrong Node.js version error**
 
-A: Frontend assets require Node.js 14:
+A: Frontend assets require Node.js 18 LTS or higher:
 
-- **DDEV**: Node.js 14 is included automatically
-- **Manual setup**: Install Node.js 14 from https://nodejs.org/
+- **DDEV**: Node.js 18 is included automatically
+- **Manual setup**: Install Node.js 18 LTS from https://nodejs.org/
 
 Project-Specific Issues
 =======================

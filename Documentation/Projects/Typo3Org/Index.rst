@@ -92,7 +92,7 @@ Local Development Setup
 
 Follow the :doc:`../../LocalEnvironment/Manual/Index` guide with these project-specific details:
 
-- Database dump: ``https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
+- Database dump: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - Filefill configuration: See the configuration in :doc:`../../LocalEnvironment/Ddev/Index`
 
 Development Guidelines

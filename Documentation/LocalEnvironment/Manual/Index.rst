@@ -22,7 +22,7 @@ Prerequisites
 - PHP 8.1 or higher
 - MariaDB or MySQL database
 - Web server (Apache/Nginx)
-- Node.js 14 (for frontend asset building)
+- Node.js 18 LTS or higher (for frontend asset building)
 - All TYPO3 12.4 LTS requirements
 
 **Optional for TER Project**
@@ -54,31 +54,17 @@ Clone Repository
 
     cp auth.json.example auth.json
 
-#. Edit ``auth.json`` and add your GitLab credentials::
+#. Edit ``auth.json`` and add your GitLab credentials:
 
-    {
-        "http-basic": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "password": "gitlabpassword"
-            }
-        },
-        "gitlab-api": {
-            "git.typo3.org": {
-                "username": "gitlabusername",
-                "token": "gitlab_personal_access_token",
-                "project-id": "5",
-                "branch": "develop",
-                "job-name": "Get dump for local environment"
-            }
-        }
-    }
+   ..  literalinclude:: ../_codesnippets/auth.json
+       :caption: auth.json
+       :language: json
 
    **Required fields:**
 
    - ``http-basic``: Basic authentication for Git operations
    - ``gitlab-api``: API access for database synchronization and CI/CD artifacts
-   - ``project-id``: Project ID for database dumps (5 = typo3.org)
+   - ``project-id``: Project ID for database dumps (133 = typo3.org, 134 = extensions.typo3.org)
 
 Database Setup
 --------------
@@ -91,7 +77,7 @@ Database Setup
 
     # For typo3.org
     curl -H "PRIVATE-TOKEN: your-gitlab-token" \
-         "https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment" \
+         "https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment" \
          -o database.zip
 
 #. Extract and import the database::
@@ -101,7 +87,7 @@ Database Setup
 
 **Database URLs for Projects:**
 
-- typo3.org: ``https://git.typo3.org/api/v4/projects/5/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
+- typo3.org: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - Other projects: URLs will be provided later
 
 TYPO3 Configuration
@@ -150,7 +136,7 @@ CSS and JavaScript Setup
 
 .. rst-class:: bignums
 
-#. Verify Node.js version (must be Node.js 14)::
+#. Verify Node.js version (must be Node.js 18 LTS or higher)::
 
     node --version
 
