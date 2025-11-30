@@ -182,7 +182,7 @@ Getting Help
 **Resources**
 
 - Project-specific issues: Repository issue tracker
-- General questions: TYPO3 Slack #typo3-org
+- General questions: TYPO3 Slack #t3o-team
 - TYPO3 documentation: https://docs.typo3.org/
 
 **Contacts**

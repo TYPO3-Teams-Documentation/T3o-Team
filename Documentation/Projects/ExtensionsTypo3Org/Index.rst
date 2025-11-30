@@ -254,7 +254,7 @@ Getting Help
 
 - Project-specific issues: Repository issue tracker
 - Solr questions: TYPO3 Slack #typo3-solr
-- General questions: TYPO3 Slack #typo3-org
+- General questions: TYPO3 Slack #t3o-ter-team
 
 **Resources**
 

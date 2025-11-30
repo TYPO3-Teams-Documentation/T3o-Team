@@ -220,7 +220,7 @@ Getting Help
 **Project Support**
 
 - Repository issues: Use project issue tracker (when available)
-- User management questions: TYPO3 Slack #typo3-org
+- User management questions: TYPO3 Slack #t3o-team
 - LDAP/Authentication: Contact system administrators
 
 **Technical Resources**

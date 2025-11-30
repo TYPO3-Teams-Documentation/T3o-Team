@@ -210,7 +210,7 @@ Getting Help
 **Project Support**
 
 - Repository issues: Use project issue tracker (when available)
-- General questions: TYPO3 Slack #typo3-org
+- General questions: TYPO3 Slack #t3o-team
 - Development support: Contact project maintainers
 
 **Technical Resources**

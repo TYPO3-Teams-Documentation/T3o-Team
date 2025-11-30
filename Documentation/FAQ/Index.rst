@@ -34,7 +34,7 @@ A: For all projects, work in feature branches created from:
 
 **Q: How do I contact the T3O team?**
 
-A: Contact Thomas Löffler (@spoonerweb) in TYPO3 Slack or use the #typo3-org channel.
+A: Contact Thomas Löffler (@spoonerweb) in TYPO3 Slack or use the #t3o-team channel.
 
 DDEV Environment
 ================
@@ -295,7 +295,7 @@ Still Need Help?
 
 **Resources**
 
-- TYPO3 Slack: #typo3-org channel
+- TYPO3 Slack: #t3o-team or #t3o-ter-team channel
 - TYPO3 Documentation: https://docs.typo3.org/
 - DDEV Documentation: https://ddev.readthedocs.io/
 

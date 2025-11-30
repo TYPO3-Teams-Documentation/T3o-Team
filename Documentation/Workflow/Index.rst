@@ -163,5 +163,5 @@ Getting help
 If you encounter problems:
 
 - Check the :doc:`../FAQ/Index` for common issues
-- Ask in the TYPO3 Slack #typo3-org channel
+- Ask in the TYPO3 Slack #t3o-team or #t3o-ter-team channel
 - Contact project maintainers directly
