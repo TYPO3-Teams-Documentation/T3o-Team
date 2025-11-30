@@ -63,17 +63,20 @@ Common Architecture
 All projects share similar architecture:
 
 **Technology Stack**
+
 - TYPO3 CMS 12.4 LTS
 - PHP 8.1+
 - MariaDB/MySQL database
 - Composer for dependency management
 
 **Extensions**
+
 - ``t3olayout``: Common layout extension for all projects
 - ``filefill``: Asset loading from production (by Nicole Cordes)
 - Project-specific extensions as needed
 
 **Development Workflow**
+
 - GitLab-based development
 - Feature branches from ``develop`` branch
 - Merge requests for code review
@@ -85,6 +88,7 @@ Database Synchronization
 Each project provides database dumps via GitLab CI/CD artifacts:
 
 **Available Databases**
+
 - **typo3.org**: ``https://git.typo3.org/api/v4/projects/133/jobs/artifacts/develop/download?job=Get%20dump%20for%20local%20environment``
 - **Other projects**: URLs will be provided later
 
@@ -95,11 +99,13 @@ Access Requirements
 ===================
 
 **Standard Access**
+
 - TYPO3.org account
 - GitLab access (username must match TYPO3.org username)
 - Account management via `my.typo3.org <https://my.typo3.org/>`_
 
 **Special Access Requirements**
+
 - **extensions.typo3.org**: Signed NDA required due to GDPR compliance (user data protection)
 
 If you can't access GitLab, log in to https://typo3.org/ once to sync your account with LDAP.
@@ -131,11 +137,13 @@ Branch Strategy
 ===============
 
 **Website Projects**
+
 - Main branch: ``develop``
 - Feature branches: ``feature/issue-number-description``
 - Hotfix branches: ``hotfix/description``
 
 **Extensions**
+
 - Main branch: ``master``
 - Feature branches: ``feature/issue-number-description``
 
